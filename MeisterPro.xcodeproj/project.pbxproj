@@ -1,0 +1,827 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30381F97058AE1D24EA3395F /* Pods_MeisterProTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF23F5EA5C4D625F3348C44 /* Pods_MeisterProTests.framework */; };
+		B5950E081DF719CA2D968CBC /* Pods_MeisterPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F61C9FCC2A6697C1E70BA48 /* Pods_MeisterPro.framework */; };
+		ED0F77DE294D5FD400E1CD0D /* projectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0F77DD294D5FD400E1CD0D /* projectViewModel.swift */; };
+		ED0F77E0294D663900E1CD0D /* toDoTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0F77DF294D663900E1CD0D /* toDoTV.swift */; };
+		ED12AC6B2950E90900387594 /* basicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED12AC6A2950E90900387594 /* basicViewModel.swift */; };
+		ED36127A25DAE12C007A04FE /* MSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36127925DAE12C007A04FE /* MSTabBar.swift */; };
+		ED36127E25DAE2A9007A04FE /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36127D25DAE2A9007A04FE /* WelcomeViewController.swift */; };
+		ED36128125DAE3D2007A04FE /* MSProjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36128025DAE3D2007A04FE /* MSProjects.swift */; };
+		ED36128425DAE3E7007A04FE /* MSTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36128325DAE3E7007A04FE /* MSTasks.swift */; };
+		ED36128725DAE3F9007A04FE /* MSChecklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36128625DAE3F9007A04FE /* MSChecklist.swift */; };
+		ED36128B25DAE87D007A04FE /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36128A25DAE87D007A04FE /* Contants.swift */; };
+		ED5F047025DD6B1C0012422C /* MSProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F046E25DD6B1B0012422C /* MSProjectCell.swift */; };
+		ED5F047125DD6B1C0012422C /* MSProjectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED5F046F25DD6B1C0012422C /* MSProjectCell.xib */; };
+		ED5F047925DD84CC0012422C /* MyCheckList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F047825DD84CC0012422C /* MyCheckList.swift */; };
+		ED5F047C25DD84D60012422C /* MyProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F047B25DD84D60012422C /* MyProject.swift */; };
+		ED5F047F25DD84E40012422C /* MyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F047E25DD84E40012422C /* MyTask.swift */; };
+		ED74580B294EBBB600F8BBAE /* tabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED74580A294EBBB600F8BBAE /* tabViewModel.swift */; };
+		ED74580D294EC9DB00F8BBAE /* basicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED74580C294EC9DB00F8BBAE /* basicVC.swift */; };
+		ED88AB9F294C0468008894A8 /* signInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88AB9E294C0468008894A8 /* signInButton.swift */; };
+		ED88ABA2294C04CB008894A8 /* signInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABA1294C04CB008894A8 /* signInViewModel.swift */; };
+		ED88ABA6294C0659008894A8 /* registerTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABA5294C0659008894A8 /* registerTF.swift */; };
+		ED88ABA8294C0938008894A8 /* commonAuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABA7294C0938008894A8 /* commonAuthButton.swift */; };
+		ED88ABAA294C0B49008894A8 /* registerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABA9294C0B49008894A8 /* registerViewModel.swift */; };
+		ED88ABAC294C0FD6008894A8 /* loginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABAB294C0FD6008894A8 /* loginViewModel.swift */; };
+		ED88ABAE294C1665008894A8 /* containerTFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABAD294C1665008894A8 /* containerTFButton.swift */; };
+		ED88ABB0294C19A6008894A8 /* quoteLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABAF294C19A6008894A8 /* quoteLabel.swift */; };
+		ED88ABB2294C20C2008894A8 /* profileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABB1294C20C2008894A8 /* profileViewModel.swift */; };
+		ED88ABB4294C21EF008894A8 /* coverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABB3294C21EF008894A8 /* coverImageView.swift */; };
+		ED88ABB6294C248A008894A8 /* userProfileViewGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABB5294C248A008894A8 /* userProfileViewGesture.swift */; };
+		ED88ABB8294C2634008894A8 /* mainProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABB7294C2634008894A8 /* mainProfileImageView.swift */; };
+		ED88ABBA294C2819008894A8 /* socialsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABB9294C2819008894A8 /* socialsButton.swift */; };
+		ED88FC8725DADB7F0005F723 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88FC8625DADB7F0005F723 /* AppDelegate.swift */; };
+		ED88FC8925DADB7F0005F723 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88FC8825DADB7F0005F723 /* SceneDelegate.swift */; };
+		ED88FC9025DADB800005F723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED88FC8F25DADB800005F723 /* Assets.xcassets */; };
+		ED88FC9325DADB800005F723 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED88FC9125DADB800005F723 /* LaunchScreen.storyboard */; };
+		ED89C25025F13C6900D8FA62 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89C24F25F13C6900D8FA62 /* ProfileVC.swift */; };
+		ED89C25B25F153E300D8FA62 /* AppImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89C25A25F153E300D8FA62 /* AppImageData.swift */; };
+		ED8BDEEE294E374300CBA11A /* taskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8BDEED294E374300CBA11A /* taskViewModel.swift */; };
+		ED8BDEF0294E421B00CBA11A /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8BDEEF294E421B00CBA11A /* RealmHelper.swift */; };
+		ED8BDEF2294E4A9D00CBA11A /* MSTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8BDEF1294E4A9D00CBA11A /* MSTaskCell.swift */; };
+		ED8BDEF4294E7B2500CBA11A /* checklistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8BDEF3294E7B2500CBA11A /* checklistViewModel.swift */; };
+		ED8BDEF6294E8C1700CBA11A /* MSChecklistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8BDEF5294E8C1700CBA11A /* MSChecklistCell.swift */; };
+		EDB4389D25EE88F600226DC4 /* TFeditorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB4389C25EE88F600226DC4 /* TFeditorVC.swift */; };
+		EDB438A025EE89DB00226DC4 /* TFeditorContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB4389F25EE89DB00226DC4 /* TFeditorContainer.swift */; };
+		EDB438A425EE8F6C00226DC4 /* TFeditorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB438A325EE8F6C00226DC4 /* TFeditorTextField.swift */; };
+		EDE54A262963502D00CE529A /* registerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE54A252963502D00CE529A /* registerTest.swift */; };
+		EDE54A282963B15F00CE529A /* tabViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE54A272963B15F00CE529A /* tabViewTest.swift */; };
+		EDE54A2A2963B3F800CE529A /* projectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE54A292963B3F800CE529A /* projectTest.swift */; };
+		EDFDB38025E420F200D8B041 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDFDB37F25E420F200D8B041 /* GoogleService-Info.plist */; };
+		EDFDB38325E4245D00D8B041 /* SignInLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDB38225E4245D00D8B041 /* SignInLaunch.swift */; };
+		EDFDB38625E4247A00D8B041 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDB38525E4247A00D8B041 /* Register.swift */; };
+		EDFDB38A25E4248500D8B041 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDB38925E4248500D8B041 /* Login.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED4BA83A296227C000253E7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED88FC7B25DADB7F0005F723 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED88FC8225DADB7F0005F723;
+			remoteInfo = MeisterPro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A6F5E3DF690FCF4C1A8D957 /* Pods-MeisterProTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeisterProTests.release.xcconfig"; path = "Target Support Files/Pods-MeisterProTests/Pods-MeisterProTests.release.xcconfig"; sourceTree = "<group>"; };
+		1CF23F5EA5C4D625F3348C44 /* Pods_MeisterProTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeisterProTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32FAFAD1EAF2CF1B969E67BF /* Pods-MeisterProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeisterProTests.debug.xcconfig"; path = "Target Support Files/Pods-MeisterProTests/Pods-MeisterProTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F61C9FCC2A6697C1E70BA48 /* Pods_MeisterPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeisterPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED0F77DD294D5FD400E1CD0D /* projectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectViewModel.swift; sourceTree = "<group>"; };
+		ED0F77DF294D663900E1CD0D /* toDoTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toDoTV.swift; sourceTree = "<group>"; };
+		ED12AC6A2950E90900387594 /* basicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basicViewModel.swift; sourceTree = "<group>"; };
+		ED36127925DAE12C007A04FE /* MSTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSTabBar.swift; sourceTree = "<group>"; };
+		ED36127D25DAE2A9007A04FE /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		ED36128025DAE3D2007A04FE /* MSProjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSProjects.swift; sourceTree = "<group>"; };
+		ED36128325DAE3E7007A04FE /* MSTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSTasks.swift; sourceTree = "<group>"; };
+		ED36128625DAE3F9007A04FE /* MSChecklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSChecklist.swift; sourceTree = "<group>"; };
+		ED36128A25DAE87D007A04FE /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
+		ED4BA836296227C000253E7A /* MeisterProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeisterProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED5F046E25DD6B1B0012422C /* MSProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSProjectCell.swift; sourceTree = "<group>"; };
+		ED5F046F25DD6B1C0012422C /* MSProjectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSProjectCell.xib; sourceTree = "<group>"; };
+		ED5F047825DD84CC0012422C /* MyCheckList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCheckList.swift; sourceTree = "<group>"; };
+		ED5F047B25DD84D60012422C /* MyProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProject.swift; sourceTree = "<group>"; };
+		ED5F047E25DD84E40012422C /* MyTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTask.swift; sourceTree = "<group>"; };
+		ED74580A294EBBB600F8BBAE /* tabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabViewModel.swift; sourceTree = "<group>"; };
+		ED74580C294EC9DB00F8BBAE /* basicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basicVC.swift; sourceTree = "<group>"; };
+		ED88AB9E294C0468008894A8 /* signInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInButton.swift; sourceTree = "<group>"; };
+		ED88ABA1294C04CB008894A8 /* signInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInViewModel.swift; sourceTree = "<group>"; };
+		ED88ABA5294C0659008894A8 /* registerTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerTF.swift; sourceTree = "<group>"; };
+		ED88ABA7294C0938008894A8 /* commonAuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commonAuthButton.swift; sourceTree = "<group>"; };
+		ED88ABA9294C0B49008894A8 /* registerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewModel.swift; sourceTree = "<group>"; };
+		ED88ABAB294C0FD6008894A8 /* loginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewModel.swift; sourceTree = "<group>"; };
+		ED88ABAD294C1665008894A8 /* containerTFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = containerTFButton.swift; sourceTree = "<group>"; };
+		ED88ABAF294C19A6008894A8 /* quoteLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quoteLabel.swift; sourceTree = "<group>"; };
+		ED88ABB1294C20C2008894A8 /* profileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewModel.swift; sourceTree = "<group>"; };
+		ED88ABB3294C21EF008894A8 /* coverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coverImageView.swift; sourceTree = "<group>"; };
+		ED88ABB5294C248A008894A8 /* userProfileViewGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userProfileViewGesture.swift; sourceTree = "<group>"; };
+		ED88ABB7294C2634008894A8 /* mainProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainProfileImageView.swift; sourceTree = "<group>"; };
+		ED88ABB9294C2819008894A8 /* socialsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = socialsButton.swift; sourceTree = "<group>"; };
+		ED88FC8325DADB7F0005F723 /* MeisterPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeisterPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED88FC8625DADB7F0005F723 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED88FC8825DADB7F0005F723 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ED88FC8F25DADB800005F723 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED88FC9225DADB800005F723 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED88FC9425DADB800005F723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED89C24F25F13C6900D8FA62 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		ED89C25A25F153E300D8FA62 /* AppImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImageData.swift; sourceTree = "<group>"; };
+		ED8BDEED294E374300CBA11A /* taskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskViewModel.swift; sourceTree = "<group>"; };
+		ED8BDEEF294E421B00CBA11A /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		ED8BDEF1294E4A9D00CBA11A /* MSTaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSTaskCell.swift; sourceTree = "<group>"; };
+		ED8BDEF3294E7B2500CBA11A /* checklistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checklistViewModel.swift; sourceTree = "<group>"; };
+		ED8BDEF5294E8C1700CBA11A /* MSChecklistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSChecklistCell.swift; sourceTree = "<group>"; };
+		ED9231FC2964B78500F0B9DC /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		EDB4389C25EE88F600226DC4 /* TFeditorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFeditorVC.swift; sourceTree = "<group>"; };
+		EDB4389F25EE89DB00226DC4 /* TFeditorContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFeditorContainer.swift; sourceTree = "<group>"; };
+		EDB438A325EE8F6C00226DC4 /* TFeditorTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFeditorTextField.swift; sourceTree = "<group>"; };
+		EDE54A252963502D00CE529A /* registerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerTest.swift; sourceTree = "<group>"; };
+		EDE54A272963B15F00CE529A /* tabViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabViewTest.swift; sourceTree = "<group>"; };
+		EDE54A292963B3F800CE529A /* projectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectTest.swift; sourceTree = "<group>"; };
+		EDFDB37F25E420F200D8B041 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EDFDB38225E4245D00D8B041 /* SignInLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInLaunch.swift; sourceTree = "<group>"; };
+		EDFDB38525E4247A00D8B041 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		EDFDB38925E4248500D8B041 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		F60F8A4726BB6A441B52153B /* Pods-MeisterPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeisterPro.debug.xcconfig"; path = "Target Support Files/Pods-MeisterPro/Pods-MeisterPro.debug.xcconfig"; sourceTree = "<group>"; };
+		F708C97560D15DC722DD7796 /* Pods-MeisterPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeisterPro.release.xcconfig"; path = "Target Support Files/Pods-MeisterPro/Pods-MeisterPro.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED4BA833296227C000253E7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30381F97058AE1D24EA3395F /* Pods_MeisterProTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED88FC8025DADB7F0005F723 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5950E081DF719CA2D968CBC /* Pods_MeisterPro.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		981A1249075F864AF1341F92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F61C9FCC2A6697C1E70BA48 /* Pods_MeisterPro.framework */,
+				1CF23F5EA5C4D625F3348C44 /* Pods_MeisterProTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9355AE50E2F5EB986B54D1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F60F8A4726BB6A441B52153B /* Pods-MeisterPro.debug.xcconfig */,
+				F708C97560D15DC722DD7796 /* Pods-MeisterPro.release.xcconfig */,
+				32FAFAD1EAF2CF1B969E67BF /* Pods-MeisterProTests.debug.xcconfig */,
+				1A6F5E3DF690FCF4C1A8D957 /* Pods-MeisterProTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ED36128925DAE861007A04FE /* Uitilites */ = {
+			isa = PBXGroup;
+			children = (
+				ED36128A25DAE87D007A04FE /* Contants.swift */,
+			);
+			path = Uitilites;
+			sourceTree = "<group>";
+		};
+		ED4BA837296227C000253E7A /* MeisterProTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDE54A252963502D00CE529A /* registerTest.swift */,
+				EDE54A272963B15F00CE529A /* tabViewTest.swift */,
+				EDE54A292963B3F800CE529A /* projectTest.swift */,
+			);
+			path = MeisterProTests;
+			sourceTree = "<group>";
+		};
+		ED786EB325DC281B00F7B523 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ED5F046E25DD6B1B0012422C /* MSProjectCell.swift */,
+				ED5F046F25DD6B1C0012422C /* MSProjectCell.xib */,
+				ED8BDEF1294E4A9D00CBA11A /* MSTaskCell.swift */,
+				ED8BDEF5294E8C1700CBA11A /* MSChecklistCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ED88ABA0294C04B8008894A8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ED8BDEEF294E421B00CBA11A /* RealmHelper.swift */,
+				ED12AC6A2950E90900387594 /* basicViewModel.swift */,
+				ED88ABA1294C04CB008894A8 /* signInViewModel.swift */,
+				ED88ABA9294C0B49008894A8 /* registerViewModel.swift */,
+				ED88ABAB294C0FD6008894A8 /* loginViewModel.swift */,
+				ED74580A294EBBB600F8BBAE /* tabViewModel.swift */,
+				ED88ABB1294C20C2008894A8 /* profileViewModel.swift */,
+				ED0F77DD294D5FD400E1CD0D /* projectViewModel.swift */,
+				ED8BDEED294E374300CBA11A /* taskViewModel.swift */,
+				ED8BDEF3294E7B2500CBA11A /* checklistViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ED88ABA3294C0554008894A8 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED786EB325DC281B00F7B523 /* Cells */,
+				ED88AB9E294C0468008894A8 /* signInButton.swift */,
+				ED88ABA5294C0659008894A8 /* registerTF.swift */,
+				ED88ABA7294C0938008894A8 /* commonAuthButton.swift */,
+				EDB4389C25EE88F600226DC4 /* TFeditorVC.swift */,
+				ED88ABAD294C1665008894A8 /* containerTFButton.swift */,
+				ED88ABAF294C19A6008894A8 /* quoteLabel.swift */,
+				ED88ABB3294C21EF008894A8 /* coverImageView.swift */,
+				ED88ABB7294C2634008894A8 /* mainProfileImageView.swift */,
+				ED88ABB5294C248A008894A8 /* userProfileViewGesture.swift */,
+				ED88ABB9294C2819008894A8 /* socialsButton.swift */,
+				ED0F77DF294D663900E1CD0D /* toDoTV.swift */,
+				EDB438A325EE8F6C00226DC4 /* TFeditorTextField.swift */,
+				EDB4389F25EE89DB00226DC4 /* TFeditorContainer.swift */,
+				ED74580C294EC9DB00F8BBAE /* basicVC.swift */,
+			);
+			name = "Custom Views";
+			path = "ViewModel/Custom Views";
+			sourceTree = "<group>";
+		};
+		ED88FC7A25DADB7F0005F723 = {
+			isa = PBXGroup;
+			children = (
+				ED88FC8525DADB7F0005F723 /* MeisterPro */,
+				ED4BA837296227C000253E7A /* MeisterProTests */,
+				ED88FC8425DADB7F0005F723 /* Products */,
+				D9355AE50E2F5EB986B54D1C /* Pods */,
+				981A1249075F864AF1341F92 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ED88FC8425DADB7F0005F723 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED88FC8325DADB7F0005F723 /* MeisterPro.app */,
+				ED4BA836296227C000253E7A /* MeisterProTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED88FC8525DADB7F0005F723 /* MeisterPro */ = {
+			isa = PBXGroup;
+			children = (
+				ED88FCA325DADE640005F723 /* Support */,
+				ED36128925DAE861007A04FE /* Uitilites */,
+				ED88FC9E25DADD1D0005F723 /* Model */,
+				ED88ABA0294C04B8008894A8 /* ViewModel */,
+				ED88ABA3294C0554008894A8 /* Custom Views */,
+				ED88FCA025DADD290005F723 /* View */,
+				ED88FC9425DADB800005F723 /* Info.plist */,
+				ED9231FC2964B78500F0B9DC /* Config.xcconfig */,
+				EDFDB37F25E420F200D8B041 /* GoogleService-Info.plist */,
+			);
+			path = MeisterPro;
+			sourceTree = "<group>";
+		};
+		ED88FC9E25DADD1D0005F723 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED89C25A25F153E300D8FA62 /* AppImageData.swift */,
+				ED5F047B25DD84D60012422C /* MyProject.swift */,
+				ED5F047E25DD84E40012422C /* MyTask.swift */,
+				ED5F047825DD84CC0012422C /* MyCheckList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED88FCA025DADD290005F723 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED36127925DAE12C007A04FE /* MSTabBar.swift */,
+				EDFDB38225E4245D00D8B041 /* SignInLaunch.swift */,
+				EDFDB38525E4247A00D8B041 /* Register.swift */,
+				EDFDB38925E4248500D8B041 /* Login.swift */,
+				ED36127D25DAE2A9007A04FE /* WelcomeViewController.swift */,
+				ED89C24F25F13C6900D8FA62 /* ProfileVC.swift */,
+				ED36128025DAE3D2007A04FE /* MSProjects.swift */,
+				ED36128325DAE3E7007A04FE /* MSTasks.swift */,
+				ED36128625DAE3F9007A04FE /* MSChecklist.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED88FCA325DADE640005F723 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				ED88FC8625DADB7F0005F723 /* AppDelegate.swift */,
+				ED88FC8825DADB7F0005F723 /* SceneDelegate.swift */,
+				ED88FC8F25DADB800005F723 /* Assets.xcassets */,
+				ED88FC9125DADB800005F723 /* LaunchScreen.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED4BA835296227C000253E7A /* MeisterProTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED4BA83E296227C000253E7A /* Build configuration list for PBXNativeTarget "MeisterProTests" */;
+			buildPhases = (
+				45D3B09CED173FC572AF6D13 /* [CP] Check Pods Manifest.lock */,
+				ED4BA832296227C000253E7A /* Sources */,
+				ED4BA833296227C000253E7A /* Frameworks */,
+				ED4BA834296227C000253E7A /* Resources */,
+				1F4165FAEC0EC8F915526AA8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED4BA83B296227C000253E7A /* PBXTargetDependency */,
+			);
+			name = MeisterProTests;
+			productName = MeisterProTests;
+			productReference = ED4BA836296227C000253E7A /* MeisterProTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED88FC8225DADB7F0005F723 /* MeisterPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED88FC9725DADB800005F723 /* Build configuration list for PBXNativeTarget "MeisterPro" */;
+			buildPhases = (
+				622D529CA01B18CDAF787EAE /* [CP] Check Pods Manifest.lock */,
+				ED88FC7F25DADB7F0005F723 /* Sources */,
+				ED88FC8025DADB7F0005F723 /* Frameworks */,
+				ED88FC8125DADB7F0005F723 /* Resources */,
+				15D5EC12552BDF1B4CDB2050 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeisterPro;
+			productName = MeisterPro;
+			productReference = ED88FC8325DADB7F0005F723 /* MeisterPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED88FC7B25DADB7F0005F723 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					ED4BA835296227C000253E7A = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = ED88FC8225DADB7F0005F723;
+					};
+					ED88FC8225DADB7F0005F723 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = ED88FC7E25DADB7F0005F723 /* Build configuration list for PBXProject "MeisterPro" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED88FC7A25DADB7F0005F723;
+			productRefGroup = ED88FC8425DADB7F0005F723 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED88FC8225DADB7F0005F723 /* MeisterPro */,
+				ED4BA835296227C000253E7A /* MeisterProTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED4BA834296227C000253E7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED88FC8125DADB7F0005F723 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED88FC9325DADB800005F723 /* LaunchScreen.storyboard in Resources */,
+				EDFDB38025E420F200D8B041 /* GoogleService-Info.plist in Resources */,
+				ED5F047125DD6B1C0012422C /* MSProjectCell.xib in Resources */,
+				ED88FC9025DADB800005F723 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15D5EC12552BDF1B4CDB2050 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeisterPro/Pods-MeisterPro-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeisterPro/Pods-MeisterPro-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeisterPro/Pods-MeisterPro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F4165FAEC0EC8F915526AA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeisterProTests/Pods-MeisterProTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeisterProTests/Pods-MeisterProTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeisterProTests/Pods-MeisterProTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45D3B09CED173FC572AF6D13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeisterProTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		622D529CA01B18CDAF787EAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeisterPro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED4BA832296227C000253E7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDE54A282963B15F00CE529A /* tabViewTest.swift in Sources */,
+				EDE54A2A2963B3F800CE529A /* projectTest.swift in Sources */,
+				EDE54A262963502D00CE529A /* registerTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED88FC7F25DADB7F0005F723 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED5F047F25DD84E40012422C /* MyTask.swift in Sources */,
+				ED36128425DAE3E7007A04FE /* MSTasks.swift in Sources */,
+				ED88AB9F294C0468008894A8 /* signInButton.swift in Sources */,
+				ED88ABB6294C248A008894A8 /* userProfileViewGesture.swift in Sources */,
+				ED0F77DE294D5FD400E1CD0D /* projectViewModel.swift in Sources */,
+				ED74580D294EC9DB00F8BBAE /* basicVC.swift in Sources */,
+				ED36128725DAE3F9007A04FE /* MSChecklist.swift in Sources */,
+				ED88ABAC294C0FD6008894A8 /* loginViewModel.swift in Sources */,
+				ED88ABB0294C19A6008894A8 /* quoteLabel.swift in Sources */,
+				ED88ABB4294C21EF008894A8 /* coverImageView.swift in Sources */,
+				ED89C25025F13C6900D8FA62 /* ProfileVC.swift in Sources */,
+				ED88ABB8294C2634008894A8 /* mainProfileImageView.swift in Sources */,
+				ED5F047925DD84CC0012422C /* MyCheckList.swift in Sources */,
+				ED88ABAE294C1665008894A8 /* containerTFButton.swift in Sources */,
+				ED74580B294EBBB600F8BBAE /* tabViewModel.swift in Sources */,
+				ED88ABA6294C0659008894A8 /* registerTF.swift in Sources */,
+				EDFDB38625E4247A00D8B041 /* Register.swift in Sources */,
+				ED88ABAA294C0B49008894A8 /* registerViewModel.swift in Sources */,
+				ED8BDEF2294E4A9D00CBA11A /* MSTaskCell.swift in Sources */,
+				ED88ABA8294C0938008894A8 /* commonAuthButton.swift in Sources */,
+				EDB438A025EE89DB00226DC4 /* TFeditorContainer.swift in Sources */,
+				ED88ABA2294C04CB008894A8 /* signInViewModel.swift in Sources */,
+				ED89C25B25F153E300D8FA62 /* AppImageData.swift in Sources */,
+				EDB4389D25EE88F600226DC4 /* TFeditorVC.swift in Sources */,
+				ED8BDEF4294E7B2500CBA11A /* checklistViewModel.swift in Sources */,
+				ED8BDEEE294E374300CBA11A /* taskViewModel.swift in Sources */,
+				ED88FC8725DADB7F0005F723 /* AppDelegate.swift in Sources */,
+				EDFDB38A25E4248500D8B041 /* Login.swift in Sources */,
+				ED8BDEF6294E8C1700CBA11A /* MSChecklistCell.swift in Sources */,
+				ED5F047C25DD84D60012422C /* MyProject.swift in Sources */,
+				ED88ABB2294C20C2008894A8 /* profileViewModel.swift in Sources */,
+				ED36127E25DAE2A9007A04FE /* WelcomeViewController.swift in Sources */,
+				EDFDB38325E4245D00D8B041 /* SignInLaunch.swift in Sources */,
+				ED36128125DAE3D2007A04FE /* MSProjects.swift in Sources */,
+				ED5F047025DD6B1C0012422C /* MSProjectCell.swift in Sources */,
+				ED0F77E0294D663900E1CD0D /* toDoTV.swift in Sources */,
+				EDB438A425EE8F6C00226DC4 /* TFeditorTextField.swift in Sources */,
+				ED12AC6B2950E90900387594 /* basicViewModel.swift in Sources */,
+				ED36128B25DAE87D007A04FE /* Contants.swift in Sources */,
+				ED88FC8925DADB7F0005F723 /* SceneDelegate.swift in Sources */,
+				ED36127A25DAE12C007A04FE /* MSTabBar.swift in Sources */,
+				ED8BDEF0294E421B00CBA11A /* RealmHelper.swift in Sources */,
+				ED88ABBA294C2819008894A8 /* socialsButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED4BA83B296227C000253E7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED88FC8225DADB7F0005F723 /* MeisterPro */;
+			targetProxy = ED4BA83A296227C000253E7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED88FC9125DADB800005F723 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED88FC9225DADB800005F723 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED4BA83C296227C000253E7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32FAFAD1EAF2CF1B969E67BF /* Pods-MeisterProTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muazhassan..MeisterProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeisterPro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MeisterPro";
+			};
+			name = Debug;
+		};
+		ED4BA83D296227C000253E7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A6F5E3DF690FCF4C1A8D957 /* Pods-MeisterProTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muazhassan..MeisterProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeisterPro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MeisterPro";
+			};
+			name = Release;
+		};
+		ED88FC9525DADB800005F723 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED88FC9625DADB800005F723 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED88FC9825DADB800005F723 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F60F8A4726BB6A441B52153B /* Pods-MeisterPro.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MeisterPro/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.syedmuazhassan.MeisterPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		ED88FC9925DADB800005F723 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F708C97560D15DC722DD7796 /* Pods-MeisterPro.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MeisterPro/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.syedmuazhassan.MeisterPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED4BA83E296227C000253E7A /* Build configuration list for PBXNativeTarget "MeisterProTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED4BA83C296227C000253E7A /* Debug */,
+				ED4BA83D296227C000253E7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED88FC7E25DADB7F0005F723 /* Build configuration list for PBXProject "MeisterPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED88FC9525DADB800005F723 /* Debug */,
+				ED88FC9625DADB800005F723 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED88FC9725DADB800005F723 /* Build configuration list for PBXNativeTarget "MeisterPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED88FC9825DADB800005F723 /* Debug */,
+				ED88FC9925DADB800005F723 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED88FC7B25DADB7F0005F723 /* Project object */;
+}
