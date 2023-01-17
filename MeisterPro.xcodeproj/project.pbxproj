@@ -10,28 +10,29 @@
 		30381F97058AE1D24EA3395F /* Pods_MeisterProTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF23F5EA5C4D625F3348C44 /* Pods_MeisterProTests.framework */; };
 		B5950E081DF719CA2D968CBC /* Pods_MeisterPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F61C9FCC2A6697C1E70BA48 /* Pods_MeisterPro.framework */; };
 		ED0F77DE294D5FD400E1CD0D /* projectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0F77DD294D5FD400E1CD0D /* projectViewModel.swift */; };
-		ED0F77E0294D663900E1CD0D /* toDoTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0F77DF294D663900E1CD0D /* toDoTV.swift */; };
-		ED12AC6B2950E90900387594 /* basicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED12AC6A2950E90900387594 /* basicViewModel.swift */; };
-		ED36127A25DAE12C007A04FE /* MSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36127925DAE12C007A04FE /* MSTabBar.swift */; };
+		ED0F77E0294D663900E1CD0D /* fundamentalTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0F77DF294D663900E1CD0D /* fundamentalTableView.swift */; };
+		ED12AC6B2950E90900387594 /* fundamentalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED12AC6A2950E90900387594 /* fundamentalViewModel.swift */; };
+		ED36127A25DAE12C007A04FE /* tabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36127925DAE12C007A04FE /* tabView.swift */; };
 		ED36127E25DAE2A9007A04FE /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36127D25DAE2A9007A04FE /* WelcomeViewController.swift */; };
-		ED36128125DAE3D2007A04FE /* MSProjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36128025DAE3D2007A04FE /* MSProjects.swift */; };
-		ED36128425DAE3E7007A04FE /* MSTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36128325DAE3E7007A04FE /* MSTasks.swift */; };
-		ED36128725DAE3F9007A04FE /* MSChecklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36128625DAE3F9007A04FE /* MSChecklist.swift */; };
+		ED36128125DAE3D2007A04FE /* projectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36128025DAE3D2007A04FE /* projectView.swift */; };
+		ED36128425DAE3E7007A04FE /* taskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36128325DAE3E7007A04FE /* taskView.swift */; };
+		ED36128725DAE3F9007A04FE /* checklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36128625DAE3F9007A04FE /* checklistView.swift */; };
 		ED36128B25DAE87D007A04FE /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36128A25DAE87D007A04FE /* Contants.swift */; };
+		ED37AA8E2976E9B000AD9925 /* tabViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE54A272963B15F00CE529A /* tabViewTest.swift */; };
 		ED5F047025DD6B1C0012422C /* MSProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F046E25DD6B1B0012422C /* MSProjectCell.swift */; };
 		ED5F047125DD6B1C0012422C /* MSProjectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED5F046F25DD6B1C0012422C /* MSProjectCell.xib */; };
-		ED5F047925DD84CC0012422C /* MyCheckList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F047825DD84CC0012422C /* MyCheckList.swift */; };
-		ED5F047C25DD84D60012422C /* MyProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F047B25DD84D60012422C /* MyProject.swift */; };
-		ED5F047F25DD84E40012422C /* MyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F047E25DD84E40012422C /* MyTask.swift */; };
+		ED5F047925DD84CC0012422C /* checkListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F047825DD84CC0012422C /* checkListModel.swift */; };
+		ED5F047C25DD84D60012422C /* projectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F047B25DD84D60012422C /* projectModel.swift */; };
+		ED5F047F25DD84E40012422C /* taskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F047E25DD84E40012422C /* taskModel.swift */; };
 		ED74580B294EBBB600F8BBAE /* tabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED74580A294EBBB600F8BBAE /* tabViewModel.swift */; };
-		ED74580D294EC9DB00F8BBAE /* basicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED74580C294EC9DB00F8BBAE /* basicVC.swift */; };
+		ED74580D294EC9DB00F8BBAE /* fundamentalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED74580C294EC9DB00F8BBAE /* fundamentalViewController.swift */; };
 		ED88AB9F294C0468008894A8 /* signInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88AB9E294C0468008894A8 /* signInButton.swift */; };
 		ED88ABA2294C04CB008894A8 /* signInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABA1294C04CB008894A8 /* signInViewModel.swift */; };
 		ED88ABA6294C0659008894A8 /* registerTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABA5294C0659008894A8 /* registerTF.swift */; };
 		ED88ABA8294C0938008894A8 /* commonAuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABA7294C0938008894A8 /* commonAuthButton.swift */; };
 		ED88ABAA294C0B49008894A8 /* registerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABA9294C0B49008894A8 /* registerViewModel.swift */; };
 		ED88ABAC294C0FD6008894A8 /* loginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABAB294C0FD6008894A8 /* loginViewModel.swift */; };
-		ED88ABAE294C1665008894A8 /* containerTFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABAD294C1665008894A8 /* containerTFButton.swift */; };
+		ED88ABAE294C1665008894A8 /* containerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABAD294C1665008894A8 /* containerButton.swift */; };
 		ED88ABB0294C19A6008894A8 /* quoteLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABAF294C19A6008894A8 /* quoteLabel.swift */; };
 		ED88ABB2294C20C2008894A8 /* profileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABB1294C20C2008894A8 /* profileViewModel.swift */; };
 		ED88ABB4294C21EF008894A8 /* coverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABB3294C21EF008894A8 /* coverImageView.swift */; };
@@ -42,23 +43,22 @@
 		ED88FC8925DADB7F0005F723 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88FC8825DADB7F0005F723 /* SceneDelegate.swift */; };
 		ED88FC9025DADB800005F723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED88FC8F25DADB800005F723 /* Assets.xcassets */; };
 		ED88FC9325DADB800005F723 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED88FC9125DADB800005F723 /* LaunchScreen.storyboard */; };
-		ED89C25025F13C6900D8FA62 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89C24F25F13C6900D8FA62 /* ProfileVC.swift */; };
-		ED89C25B25F153E300D8FA62 /* AppImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89C25A25F153E300D8FA62 /* AppImageData.swift */; };
+		ED89C25025F13C6900D8FA62 /* profileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89C24F25F13C6900D8FA62 /* profileView.swift */; };
+		ED89C25B25F153E300D8FA62 /* profileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89C25A25F153E300D8FA62 /* profileModel.swift */; };
 		ED8BDEEE294E374300CBA11A /* taskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8BDEED294E374300CBA11A /* taskViewModel.swift */; };
 		ED8BDEF0294E421B00CBA11A /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8BDEEF294E421B00CBA11A /* RealmHelper.swift */; };
 		ED8BDEF2294E4A9D00CBA11A /* MSTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8BDEF1294E4A9D00CBA11A /* MSTaskCell.swift */; };
 		ED8BDEF4294E7B2500CBA11A /* checklistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8BDEF3294E7B2500CBA11A /* checklistViewModel.swift */; };
 		ED8BDEF6294E8C1700CBA11A /* MSChecklistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8BDEF5294E8C1700CBA11A /* MSChecklistCell.swift */; };
-		EDB4389D25EE88F600226DC4 /* TFeditorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB4389C25EE88F600226DC4 /* TFeditorVC.swift */; };
-		EDB438A025EE89DB00226DC4 /* TFeditorContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB4389F25EE89DB00226DC4 /* TFeditorContainer.swift */; };
-		EDB438A425EE8F6C00226DC4 /* TFeditorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB438A325EE8F6C00226DC4 /* TFeditorTextField.swift */; };
-		EDE54A262963502D00CE529A /* registerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE54A252963502D00CE529A /* registerTest.swift */; };
-		EDE54A282963B15F00CE529A /* tabViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE54A272963B15F00CE529A /* tabViewTest.swift */; };
-		EDE54A2A2963B3F800CE529A /* projectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE54A292963B3F800CE529A /* projectTest.swift */; };
+		EDB4389D25EE88F600226DC4 /* editorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB4389C25EE88F600226DC4 /* editorView.swift */; };
+		EDB438A025EE89DB00226DC4 /* containerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB4389F25EE89DB00226DC4 /* containerView.swift */; };
+		EDB438A425EE8F6C00226DC4 /* editorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB438A325EE8F6C00226DC4 /* editorTextField.swift */; };
+		EDE54A262963502D00CE529A /* registerViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE54A252963502D00CE529A /* registerViewTest.swift */; };
+		EDE54A2A2963B3F800CE529A /* projectViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE54A292963B3F800CE529A /* projectViewTest.swift */; };
 		EDFDB38025E420F200D8B041 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDFDB37F25E420F200D8B041 /* GoogleService-Info.plist */; };
-		EDFDB38325E4245D00D8B041 /* SignInLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDB38225E4245D00D8B041 /* SignInLaunch.swift */; };
-		EDFDB38625E4247A00D8B041 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDB38525E4247A00D8B041 /* Register.swift */; };
-		EDFDB38A25E4248500D8B041 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDB38925E4248500D8B041 /* Login.swift */; };
+		EDFDB38325E4245D00D8B041 /* signInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDB38225E4245D00D8B041 /* signInView.swift */; };
+		EDFDB38625E4247A00D8B041 /* registerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDB38525E4247A00D8B041 /* registerView.swift */; };
+		EDFDB38A25E4248500D8B041 /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDB38925E4248500D8B041 /* loginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,29 +77,29 @@
 		32FAFAD1EAF2CF1B969E67BF /* Pods-MeisterProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeisterProTests.debug.xcconfig"; path = "Target Support Files/Pods-MeisterProTests/Pods-MeisterProTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F61C9FCC2A6697C1E70BA48 /* Pods_MeisterPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeisterPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED0F77DD294D5FD400E1CD0D /* projectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectViewModel.swift; sourceTree = "<group>"; };
-		ED0F77DF294D663900E1CD0D /* toDoTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toDoTV.swift; sourceTree = "<group>"; };
-		ED12AC6A2950E90900387594 /* basicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basicViewModel.swift; sourceTree = "<group>"; };
-		ED36127925DAE12C007A04FE /* MSTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSTabBar.swift; sourceTree = "<group>"; };
+		ED0F77DF294D663900E1CD0D /* fundamentalTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fundamentalTableView.swift; sourceTree = "<group>"; };
+		ED12AC6A2950E90900387594 /* fundamentalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fundamentalViewModel.swift; sourceTree = "<group>"; };
+		ED36127925DAE12C007A04FE /* tabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabView.swift; sourceTree = "<group>"; };
 		ED36127D25DAE2A9007A04FE /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		ED36128025DAE3D2007A04FE /* MSProjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSProjects.swift; sourceTree = "<group>"; };
-		ED36128325DAE3E7007A04FE /* MSTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSTasks.swift; sourceTree = "<group>"; };
-		ED36128625DAE3F9007A04FE /* MSChecklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSChecklist.swift; sourceTree = "<group>"; };
+		ED36128025DAE3D2007A04FE /* projectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectView.swift; sourceTree = "<group>"; };
+		ED36128325DAE3E7007A04FE /* taskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskView.swift; sourceTree = "<group>"; };
+		ED36128625DAE3F9007A04FE /* checklistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checklistView.swift; sourceTree = "<group>"; };
 		ED36128A25DAE87D007A04FE /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
 		ED4BA836296227C000253E7A /* MeisterProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeisterProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED5F046E25DD6B1B0012422C /* MSProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSProjectCell.swift; sourceTree = "<group>"; };
 		ED5F046F25DD6B1C0012422C /* MSProjectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSProjectCell.xib; sourceTree = "<group>"; };
-		ED5F047825DD84CC0012422C /* MyCheckList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCheckList.swift; sourceTree = "<group>"; };
-		ED5F047B25DD84D60012422C /* MyProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProject.swift; sourceTree = "<group>"; };
-		ED5F047E25DD84E40012422C /* MyTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTask.swift; sourceTree = "<group>"; };
+		ED5F047825DD84CC0012422C /* checkListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkListModel.swift; sourceTree = "<group>"; };
+		ED5F047B25DD84D60012422C /* projectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectModel.swift; sourceTree = "<group>"; };
+		ED5F047E25DD84E40012422C /* taskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskModel.swift; sourceTree = "<group>"; };
 		ED74580A294EBBB600F8BBAE /* tabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabViewModel.swift; sourceTree = "<group>"; };
-		ED74580C294EC9DB00F8BBAE /* basicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basicVC.swift; sourceTree = "<group>"; };
+		ED74580C294EC9DB00F8BBAE /* fundamentalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fundamentalViewController.swift; sourceTree = "<group>"; };
 		ED88AB9E294C0468008894A8 /* signInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInButton.swift; sourceTree = "<group>"; };
 		ED88ABA1294C04CB008894A8 /* signInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInViewModel.swift; sourceTree = "<group>"; };
 		ED88ABA5294C0659008894A8 /* registerTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerTF.swift; sourceTree = "<group>"; };
 		ED88ABA7294C0938008894A8 /* commonAuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commonAuthButton.swift; sourceTree = "<group>"; };
 		ED88ABA9294C0B49008894A8 /* registerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewModel.swift; sourceTree = "<group>"; };
 		ED88ABAB294C0FD6008894A8 /* loginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewModel.swift; sourceTree = "<group>"; };
-		ED88ABAD294C1665008894A8 /* containerTFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = containerTFButton.swift; sourceTree = "<group>"; };
+		ED88ABAD294C1665008894A8 /* containerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = containerButton.swift; sourceTree = "<group>"; };
 		ED88ABAF294C19A6008894A8 /* quoteLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quoteLabel.swift; sourceTree = "<group>"; };
 		ED88ABB1294C20C2008894A8 /* profileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewModel.swift; sourceTree = "<group>"; };
 		ED88ABB3294C21EF008894A8 /* coverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coverImageView.swift; sourceTree = "<group>"; };
@@ -112,24 +112,24 @@
 		ED88FC8F25DADB800005F723 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED88FC9225DADB800005F723 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED88FC9425DADB800005F723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED89C24F25F13C6900D8FA62 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
-		ED89C25A25F153E300D8FA62 /* AppImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImageData.swift; sourceTree = "<group>"; };
+		ED89C24F25F13C6900D8FA62 /* profileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileView.swift; sourceTree = "<group>"; };
+		ED89C25A25F153E300D8FA62 /* profileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileModel.swift; sourceTree = "<group>"; };
 		ED8BDEED294E374300CBA11A /* taskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskViewModel.swift; sourceTree = "<group>"; };
 		ED8BDEEF294E421B00CBA11A /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		ED8BDEF1294E4A9D00CBA11A /* MSTaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSTaskCell.swift; sourceTree = "<group>"; };
 		ED8BDEF3294E7B2500CBA11A /* checklistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checklistViewModel.swift; sourceTree = "<group>"; };
 		ED8BDEF5294E8C1700CBA11A /* MSChecklistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSChecklistCell.swift; sourceTree = "<group>"; };
 		ED9231FC2964B78500F0B9DC /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
-		EDB4389C25EE88F600226DC4 /* TFeditorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFeditorVC.swift; sourceTree = "<group>"; };
-		EDB4389F25EE89DB00226DC4 /* TFeditorContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFeditorContainer.swift; sourceTree = "<group>"; };
-		EDB438A325EE8F6C00226DC4 /* TFeditorTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFeditorTextField.swift; sourceTree = "<group>"; };
-		EDE54A252963502D00CE529A /* registerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerTest.swift; sourceTree = "<group>"; };
+		EDB4389C25EE88F600226DC4 /* editorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editorView.swift; sourceTree = "<group>"; };
+		EDB4389F25EE89DB00226DC4 /* containerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = containerView.swift; sourceTree = "<group>"; };
+		EDB438A325EE8F6C00226DC4 /* editorTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editorTextField.swift; sourceTree = "<group>"; };
+		EDE54A252963502D00CE529A /* registerViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewTest.swift; sourceTree = "<group>"; };
 		EDE54A272963B15F00CE529A /* tabViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabViewTest.swift; sourceTree = "<group>"; };
-		EDE54A292963B3F800CE529A /* projectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectTest.swift; sourceTree = "<group>"; };
+		EDE54A292963B3F800CE529A /* projectViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectViewTest.swift; sourceTree = "<group>"; };
 		EDFDB37F25E420F200D8B041 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		EDFDB38225E4245D00D8B041 /* SignInLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInLaunch.swift; sourceTree = "<group>"; };
-		EDFDB38525E4247A00D8B041 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
-		EDFDB38925E4248500D8B041 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		EDFDB38225E4245D00D8B041 /* signInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInView.swift; sourceTree = "<group>"; };
+		EDFDB38525E4247A00D8B041 /* registerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerView.swift; sourceTree = "<group>"; };
+		EDFDB38925E4248500D8B041 /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
 		F60F8A4726BB6A441B52153B /* Pods-MeisterPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeisterPro.debug.xcconfig"; path = "Target Support Files/Pods-MeisterPro/Pods-MeisterPro.debug.xcconfig"; sourceTree = "<group>"; };
 		F708C97560D15DC722DD7796 /* Pods-MeisterPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeisterPro.release.xcconfig"; path = "Target Support Files/Pods-MeisterPro/Pods-MeisterPro.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,73 +174,214 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		ED36128925DAE861007A04FE /* Uitilites */ = {
+		ED37AA7C2976D95700AD9925 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ED37AA842976DAEC00AD9925 /* Register */,
+				ED37AA852976DAF700AD9925 /* Login */,
+				ED37AA832976DAE500AD9925 /* SignIn */,
+				ED37AA7D2976D9C200AD9925 /* mainTab */,
+				ED37AA7E2976DA3E00AD9925 /* Profile */,
+				ED37AA822976DAB700AD9925 /* Welcome */,
+				ED37AA812976DA7B00AD9925 /* Project */,
+				ED37AA7F2976DA4900AD9925 /* Task */,
+				ED37AA802976DA4F00AD9925 /* Checklist */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		ED37AA7D2976D9C200AD9925 /* mainTab */ = {
+			isa = PBXGroup;
+			children = (
+				ED74580A294EBBB600F8BBAE /* tabViewModel.swift */,
+				ED36127925DAE12C007A04FE /* tabView.swift */,
+			);
+			path = mainTab;
+			sourceTree = "<group>";
+		};
+		ED37AA7E2976DA3E00AD9925 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				ED37AA8A2976DE1B00AD9925 /* Views */,
+				ED89C25A25F153E300D8FA62 /* profileModel.swift */,
+				ED88ABB1294C20C2008894A8 /* profileViewModel.swift */,
+				ED89C24F25F13C6900D8FA62 /* profileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		ED37AA7F2976DA4900AD9925 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				ED37AA872976DCA900AD9925 /* Cell */,
+				ED5F047E25DD84E40012422C /* taskModel.swift */,
+				ED8BDEED294E374300CBA11A /* taskViewModel.swift */,
+				ED36128325DAE3E7007A04FE /* taskView.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		ED37AA802976DA4F00AD9925 /* Checklist */ = {
+			isa = PBXGroup;
+			children = (
+				ED37AA8B2976E45000AD9925 /* Cell */,
+				ED5F047825DD84CC0012422C /* checkListModel.swift */,
+				ED8BDEF3294E7B2500CBA11A /* checklistViewModel.swift */,
+				ED36128625DAE3F9007A04FE /* checklistView.swift */,
+			);
+			path = Checklist;
+			sourceTree = "<group>";
+		};
+		ED37AA812976DA7B00AD9925 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				ED37AA862976DC8F00AD9925 /* Cell */,
+				ED5F047B25DD84D60012422C /* projectModel.swift */,
+				ED0F77DD294D5FD400E1CD0D /* projectViewModel.swift */,
+				ED36128025DAE3D2007A04FE /* projectView.swift */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		ED37AA822976DAB700AD9925 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				ED37AA8C2976E50B00AD9925 /* Views */,
+				ED36127D25DAE2A9007A04FE /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		ED37AA832976DAE500AD9925 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				ED88ABA1294C04CB008894A8 /* signInViewModel.swift */,
+				EDFDB38225E4245D00D8B041 /* signInView.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		ED37AA842976DAEC00AD9925 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				ED88ABA9294C0B49008894A8 /* registerViewModel.swift */,
+				EDFDB38525E4247A00D8B041 /* registerView.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		ED37AA852976DAF700AD9925 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				ED88ABAB294C0FD6008894A8 /* loginViewModel.swift */,
+				EDFDB38925E4248500D8B041 /* loginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		ED37AA862976DC8F00AD9925 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ED5F046E25DD6B1B0012422C /* MSProjectCell.swift */,
+				ED5F046F25DD6B1C0012422C /* MSProjectCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		ED37AA872976DCA900AD9925 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ED8BDEF1294E4A9D00CBA11A /* MSTaskCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		ED37AA882976DD0B00AD9925 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
 				ED36128A25DAE87D007A04FE /* Contants.swift */,
+				ED8BDEEF294E421B00CBA11A /* RealmHelper.swift */,
+				ED37AA892976DD5F00AD9925 /* Views */,
 			);
-			path = Uitilites;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		ED37AA892976DD5F00AD9925 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED37AA912976EEF900AD9925 /* AuthView */,
+				ED37AA8F2976EC6F00AD9925 /* textEditorView */,
+				ED12AC6A2950E90900387594 /* fundamentalViewModel.swift */,
+				ED74580C294EC9DB00F8BBAE /* fundamentalViewController.swift */,
+				ED0F77DF294D663900E1CD0D /* fundamentalTableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ED37AA8A2976DE1B00AD9925 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED88ABB3294C21EF008894A8 /* coverImageView.swift */,
+				ED88ABB7294C2634008894A8 /* mainProfileImageView.swift */,
+				ED88ABB5294C248A008894A8 /* userProfileViewGesture.swift */,
+				ED88ABB9294C2819008894A8 /* socialsButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ED37AA8B2976E45000AD9925 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ED8BDEF5294E8C1700CBA11A /* MSChecklistCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		ED37AA8C2976E50B00AD9925 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED88ABAF294C19A6008894A8 /* quoteLabel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ED37AA8F2976EC6F00AD9925 /* textEditorView */ = {
+			isa = PBXGroup;
+			children = (
+				ED37AA902976EC9D00AD9925 /* container */,
+				EDB438A325EE8F6C00226DC4 /* editorTextField.swift */,
+				EDB4389C25EE88F600226DC4 /* editorView.swift */,
+			);
+			path = textEditorView;
+			sourceTree = "<group>";
+		};
+		ED37AA902976EC9D00AD9925 /* container */ = {
+			isa = PBXGroup;
+			children = (
+				ED88ABAD294C1665008894A8 /* containerButton.swift */,
+				EDB4389F25EE89DB00226DC4 /* containerView.swift */,
+			);
+			path = container;
+			sourceTree = "<group>";
+		};
+		ED37AA912976EEF900AD9925 /* AuthView */ = {
+			isa = PBXGroup;
+			children = (
+				ED88ABA7294C0938008894A8 /* commonAuthButton.swift */,
+				ED88AB9E294C0468008894A8 /* signInButton.swift */,
+				ED88ABA5294C0659008894A8 /* registerTF.swift */,
+			);
+			path = AuthView;
 			sourceTree = "<group>";
 		};
 		ED4BA837296227C000253E7A /* MeisterProTests */ = {
 			isa = PBXGroup;
 			children = (
-				EDE54A252963502D00CE529A /* registerTest.swift */,
 				EDE54A272963B15F00CE529A /* tabViewTest.swift */,
-				EDE54A292963B3F800CE529A /* projectTest.swift */,
+				EDE54A252963502D00CE529A /* registerViewTest.swift */,
+				EDE54A292963B3F800CE529A /* projectViewTest.swift */,
 			);
 			path = MeisterProTests;
-			sourceTree = "<group>";
-		};
-		ED786EB325DC281B00F7B523 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				ED5F046E25DD6B1B0012422C /* MSProjectCell.swift */,
-				ED5F046F25DD6B1C0012422C /* MSProjectCell.xib */,
-				ED8BDEF1294E4A9D00CBA11A /* MSTaskCell.swift */,
-				ED8BDEF5294E8C1700CBA11A /* MSChecklistCell.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		ED88ABA0294C04B8008894A8 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				ED8BDEEF294E421B00CBA11A /* RealmHelper.swift */,
-				ED12AC6A2950E90900387594 /* basicViewModel.swift */,
-				ED88ABA1294C04CB008894A8 /* signInViewModel.swift */,
-				ED88ABA9294C0B49008894A8 /* registerViewModel.swift */,
-				ED88ABAB294C0FD6008894A8 /* loginViewModel.swift */,
-				ED74580A294EBBB600F8BBAE /* tabViewModel.swift */,
-				ED88ABB1294C20C2008894A8 /* profileViewModel.swift */,
-				ED0F77DD294D5FD400E1CD0D /* projectViewModel.swift */,
-				ED8BDEED294E374300CBA11A /* taskViewModel.swift */,
-				ED8BDEF3294E7B2500CBA11A /* checklistViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		ED88ABA3294C0554008894A8 /* Custom Views */ = {
-			isa = PBXGroup;
-			children = (
-				ED786EB325DC281B00F7B523 /* Cells */,
-				ED88AB9E294C0468008894A8 /* signInButton.swift */,
-				ED88ABA5294C0659008894A8 /* registerTF.swift */,
-				ED88ABA7294C0938008894A8 /* commonAuthButton.swift */,
-				EDB4389C25EE88F600226DC4 /* TFeditorVC.swift */,
-				ED88ABAD294C1665008894A8 /* containerTFButton.swift */,
-				ED88ABAF294C19A6008894A8 /* quoteLabel.swift */,
-				ED88ABB3294C21EF008894A8 /* coverImageView.swift */,
-				ED88ABB7294C2634008894A8 /* mainProfileImageView.swift */,
-				ED88ABB5294C248A008894A8 /* userProfileViewGesture.swift */,
-				ED88ABB9294C2819008894A8 /* socialsButton.swift */,
-				ED0F77DF294D663900E1CD0D /* toDoTV.swift */,
-				EDB438A325EE8F6C00226DC4 /* TFeditorTextField.swift */,
-				EDB4389F25EE89DB00226DC4 /* TFeditorContainer.swift */,
-				ED74580C294EC9DB00F8BBAE /* basicVC.swift */,
-			);
-			name = "Custom Views";
-			path = "ViewModel/Custom Views";
 			sourceTree = "<group>";
 		};
 		ED88FC7A25DADB7F0005F723 = {
@@ -267,43 +408,13 @@
 			isa = PBXGroup;
 			children = (
 				ED88FCA325DADE640005F723 /* Support */,
-				ED36128925DAE861007A04FE /* Uitilites */,
-				ED88FC9E25DADD1D0005F723 /* Model */,
-				ED88ABA0294C04B8008894A8 /* ViewModel */,
-				ED88ABA3294C0554008894A8 /* Custom Views */,
-				ED88FCA025DADD290005F723 /* View */,
+				ED37AA882976DD0B00AD9925 /* Shared */,
+				ED37AA7C2976D95700AD9925 /* Core */,
 				ED88FC9425DADB800005F723 /* Info.plist */,
 				ED9231FC2964B78500F0B9DC /* Config.xcconfig */,
 				EDFDB37F25E420F200D8B041 /* GoogleService-Info.plist */,
 			);
 			path = MeisterPro;
-			sourceTree = "<group>";
-		};
-		ED88FC9E25DADD1D0005F723 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				ED89C25A25F153E300D8FA62 /* AppImageData.swift */,
-				ED5F047B25DD84D60012422C /* MyProject.swift */,
-				ED5F047E25DD84E40012422C /* MyTask.swift */,
-				ED5F047825DD84CC0012422C /* MyCheckList.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		ED88FCA025DADD290005F723 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				ED36127925DAE12C007A04FE /* MSTabBar.swift */,
-				EDFDB38225E4245D00D8B041 /* SignInLaunch.swift */,
-				EDFDB38525E4247A00D8B041 /* Register.swift */,
-				EDFDB38925E4248500D8B041 /* Login.swift */,
-				ED36127D25DAE2A9007A04FE /* WelcomeViewController.swift */,
-				ED89C24F25F13C6900D8FA62 /* ProfileVC.swift */,
-				ED36128025DAE3D2007A04FE /* MSProjects.swift */,
-				ED36128325DAE3E7007A04FE /* MSTasks.swift */,
-				ED36128625DAE3F9007A04FE /* MSChecklist.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		ED88FCA325DADE640005F723 /* Support */ = {
@@ -503,9 +614,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDE54A282963B15F00CE529A /* tabViewTest.swift in Sources */,
-				EDE54A2A2963B3F800CE529A /* projectTest.swift in Sources */,
-				EDE54A262963502D00CE529A /* registerTest.swift in Sources */,
+				EDE54A2A2963B3F800CE529A /* projectViewTest.swift in Sources */,
+				ED37AA8E2976E9B000AD9925 /* tabViewTest.swift in Sources */,
+				EDE54A262963502D00CE529A /* registerViewTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,47 +624,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED5F047F25DD84E40012422C /* MyTask.swift in Sources */,
-				ED36128425DAE3E7007A04FE /* MSTasks.swift in Sources */,
+				ED5F047F25DD84E40012422C /* taskModel.swift in Sources */,
+				ED36128425DAE3E7007A04FE /* taskView.swift in Sources */,
 				ED88AB9F294C0468008894A8 /* signInButton.swift in Sources */,
 				ED88ABB6294C248A008894A8 /* userProfileViewGesture.swift in Sources */,
 				ED0F77DE294D5FD400E1CD0D /* projectViewModel.swift in Sources */,
-				ED74580D294EC9DB00F8BBAE /* basicVC.swift in Sources */,
-				ED36128725DAE3F9007A04FE /* MSChecklist.swift in Sources */,
+				ED74580D294EC9DB00F8BBAE /* fundamentalViewController.swift in Sources */,
+				ED36128725DAE3F9007A04FE /* checklistView.swift in Sources */,
 				ED88ABAC294C0FD6008894A8 /* loginViewModel.swift in Sources */,
 				ED88ABB0294C19A6008894A8 /* quoteLabel.swift in Sources */,
 				ED88ABB4294C21EF008894A8 /* coverImageView.swift in Sources */,
-				ED89C25025F13C6900D8FA62 /* ProfileVC.swift in Sources */,
+				ED89C25025F13C6900D8FA62 /* profileView.swift in Sources */,
 				ED88ABB8294C2634008894A8 /* mainProfileImageView.swift in Sources */,
-				ED5F047925DD84CC0012422C /* MyCheckList.swift in Sources */,
-				ED88ABAE294C1665008894A8 /* containerTFButton.swift in Sources */,
+				ED5F047925DD84CC0012422C /* checkListModel.swift in Sources */,
+				ED88ABAE294C1665008894A8 /* containerButton.swift in Sources */,
 				ED74580B294EBBB600F8BBAE /* tabViewModel.swift in Sources */,
 				ED88ABA6294C0659008894A8 /* registerTF.swift in Sources */,
-				EDFDB38625E4247A00D8B041 /* Register.swift in Sources */,
+				EDFDB38625E4247A00D8B041 /* registerView.swift in Sources */,
 				ED88ABAA294C0B49008894A8 /* registerViewModel.swift in Sources */,
 				ED8BDEF2294E4A9D00CBA11A /* MSTaskCell.swift in Sources */,
 				ED88ABA8294C0938008894A8 /* commonAuthButton.swift in Sources */,
-				EDB438A025EE89DB00226DC4 /* TFeditorContainer.swift in Sources */,
+				EDB438A025EE89DB00226DC4 /* containerView.swift in Sources */,
 				ED88ABA2294C04CB008894A8 /* signInViewModel.swift in Sources */,
-				ED89C25B25F153E300D8FA62 /* AppImageData.swift in Sources */,
-				EDB4389D25EE88F600226DC4 /* TFeditorVC.swift in Sources */,
+				ED89C25B25F153E300D8FA62 /* profileModel.swift in Sources */,
+				EDB4389D25EE88F600226DC4 /* editorView.swift in Sources */,
 				ED8BDEF4294E7B2500CBA11A /* checklistViewModel.swift in Sources */,
 				ED8BDEEE294E374300CBA11A /* taskViewModel.swift in Sources */,
 				ED88FC8725DADB7F0005F723 /* AppDelegate.swift in Sources */,
-				EDFDB38A25E4248500D8B041 /* Login.swift in Sources */,
+				EDFDB38A25E4248500D8B041 /* loginView.swift in Sources */,
 				ED8BDEF6294E8C1700CBA11A /* MSChecklistCell.swift in Sources */,
-				ED5F047C25DD84D60012422C /* MyProject.swift in Sources */,
+				ED5F047C25DD84D60012422C /* projectModel.swift in Sources */,
 				ED88ABB2294C20C2008894A8 /* profileViewModel.swift in Sources */,
 				ED36127E25DAE2A9007A04FE /* WelcomeViewController.swift in Sources */,
-				EDFDB38325E4245D00D8B041 /* SignInLaunch.swift in Sources */,
-				ED36128125DAE3D2007A04FE /* MSProjects.swift in Sources */,
+				EDFDB38325E4245D00D8B041 /* signInView.swift in Sources */,
+				ED36128125DAE3D2007A04FE /* projectView.swift in Sources */,
 				ED5F047025DD6B1C0012422C /* MSProjectCell.swift in Sources */,
-				ED0F77E0294D663900E1CD0D /* toDoTV.swift in Sources */,
-				EDB438A425EE8F6C00226DC4 /* TFeditorTextField.swift in Sources */,
-				ED12AC6B2950E90900387594 /* basicViewModel.swift in Sources */,
+				ED0F77E0294D663900E1CD0D /* fundamentalTableView.swift in Sources */,
+				EDB438A425EE8F6C00226DC4 /* editorTextField.swift in Sources */,
+				ED12AC6B2950E90900387594 /* fundamentalViewModel.swift in Sources */,
 				ED36128B25DAE87D007A04FE /* Contants.swift in Sources */,
 				ED88FC8925DADB7F0005F723 /* SceneDelegate.swift in Sources */,
-				ED36127A25DAE12C007A04FE /* MSTabBar.swift in Sources */,
+				ED36127A25DAE12C007A04FE /* tabView.swift in Sources */,
 				ED8BDEF0294E421B00CBA11A /* RealmHelper.swift in Sources */,
 				ED88ABBA294C2819008894A8 /* socialsButton.swift in Sources */,
 			);
@@ -750,7 +861,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3YR9SZVZKC;
 				INFOPLIST_FILE = MeisterPro/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -774,7 +885,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3YR9SZVZKC;
 				INFOPLIST_FILE = MeisterPro/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				LD_RUNPATH_SEARCH_PATHS = (
