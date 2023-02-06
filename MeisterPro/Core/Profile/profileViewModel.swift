@@ -11,6 +11,8 @@ import RealmSwift
 
 
 class profileViewModel : basicViewModel {
+
+    let db = Firestore.firestore()
     
     func loadData(byEmail email: String) -> Results<AppimageData>? {
         return realm.objects(AppimageData.self).filter(NSPredicate(format: "Sender == %@", "\(email)"))

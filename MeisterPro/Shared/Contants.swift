@@ -113,3 +113,6 @@ enum QuoteArray {
         """
     ]
 }
+enum ObjectType {
+    case checklist, tasklist, projectlist
+}

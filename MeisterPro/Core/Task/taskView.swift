@@ -12,11 +12,7 @@ import RealmSwift
 
 class MSTasks: basicVC {
     
-    var Tasks : Results<MyTask>? {
-        didSet {
-            taskTableView.reloadData()
-        }
-    }
+    var Tasks : Results<MyTask>?
     
     lazy private var TFOverlay = TFeditorVC()
     private var  taskTableView =  toDoTV()
@@ -27,7 +23,8 @@ class MSTasks: basicVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        senderEmail = viewModel.fetchEmailForCurrentSession()
+        settingBinders()
+         viewModel.fetchEmail()
         
         checkCache()
         checkNeedForCloud()
@@ -36,20 +33,31 @@ class MSTasks: basicVC {
     
 //MARK: - database action
     
-    private func checkCache(){
-        Tasks = viewModel.loadData(byEmail: senderEmail)
+    private func settingBinders() {
+        viewModel.email.bind { [weak self] comingMail in
+            guard let self else { return }
+            self.senderEmail = comingMail
+        }
+        
+        viewModel.tasks.bind { [weak self] updateTasks in
+            guard let self else {return}
+            self.Tasks = updateTasks
+            self.taskTableView.reloadData()
+        }
+        
+        viewModel.error.bind { newErr in
+            print(newErr)
+        }
     }
     
-    private func writeDataAndSync(_ comingTask : MyTask){
-        Tasks = viewModel.writeTaskToLocal(comingTask)
+    private func checkCache(){
+        viewModel.loadDatalocally(forEmail: senderEmail)
     }
+    
     
     private func checkNeedForCloud(){
         if Tasks?.count == 0 {
-            viewModel.loadFromCloud(forEmail: senderEmail) {[weak self] returnedTasks in
-                guard let self else {return}
-                self.Tasks = returnedTasks
-            }
+            viewModel.LoadDataFirebase(forEmail: senderEmail)
         }
     }
     
@@ -77,15 +85,8 @@ extension MSTasks : textValuePasser {
     func didupdatevalue(string: String, index: Int) {
         guard let previousTitle = Tasks?[index].TaskTitle else { return }
         
-        viewModel.GetFireBaseID(byName: previousTitle, forEmail: senderEmail) {[weak self] (returnedID) in
-            guard let self else {return}
-            if returnedID.count > 0 {
-                self.viewModel.updateTaskToCloud(withID: returnedID, updateTask: string)
-            }else {
-                print("couldnt find your doc ")
-            }
-        }
-        Tasks  = viewModel.updateTaskAndSync(lhs: Tasks, atIndex: index, withText: string)
+        viewModel.ModifyDataFireBase(forEmail: senderEmail, forTitle: previousTitle, newTitle: string)
+        viewModel.updateLocally(title: string, atIndex: index, arr: Tasks)
     }
 }
 
@@ -103,10 +104,12 @@ extension MSTasks {
             guard let self else {return}
             if let text = localTextField.text {
                 
-                let temp = self.viewModel.formTaskObj(withName: text,
-                                                      forEmail: self.senderEmail)
-                self.viewModel.uploadTaskToCloud(temp)
-                self.writeDataAndSync(temp)
+                let temp = MyTask()
+                temp.TaskSender = self.senderEmail
+                temp.TaskTitle = text
+                
+                self.viewModel.UploadDataFirebase(forEmail: self.senderEmail, Obj: temp)
+                self.viewModel.writeDatalocally(temp)
             }
         }
         AddPop.addAction(PopAction)
@@ -138,16 +141,8 @@ extension MSTasks : UITableViewDelegate {
         
         let DeleteButton = UITableViewRowAction(style: .default, title: "Delete") { [weak self] (_, indexpath) in
             guard let self else {return}
-            self.viewModel.GetFireBaseID(byName: detachedObjc.TaskTitle,
-                                         forEmail: detachedObjc.TaskSender) { (returnedID) in
-                if returnedID.count > 0 {
-                    self.viewModel.DelFromFireBase(id: returnedID)
-                }else {
-                    print("object to be delete is not found")
-                }
-            }
-            
-            self.viewModel.deleteObjectlocally(fromArr: self.Tasks, atIndex: indexpath.row)
+            self.viewModel.ModifyDataFireBase(forEmail: detachedObjc.TaskSender, forTitle: detachedObjc.TaskTitle, toDel: true)
+            self.viewModel.deletelocally(fromArr: self.Tasks, atIndex: indexpath.row)
             tableView.deleteRows(at: [indexpath], with: .fade)
         }
         

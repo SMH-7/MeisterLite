@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import PDFKit
 
 class WelcomeViewController: basicVC {
 
@@ -30,4 +31,3 @@ class WelcomeViewController: basicVC {
         
     }
 }
-
