@@ -9,7 +9,8 @@ import Foundation
 import Firebase
 import RealmSwift
 
-class basicViewModel {
+class basicViewModel {    
+
     var realm: Realm {
         get {
             do {
@@ -22,23 +23,16 @@ class basicViewModel {
             return self.realm
         }
     }
-    let db = Firestore.firestore()
+
+}
+protocol CommonCRUD {
+    associatedtype T
     
-    func fetchEmailForCurrentSession() -> String {
-        if let PresentSender = Auth.auth().currentUser?.email {
-            return PresentSender
-        }
-        return " "
-    }
+    func writeDatalocally(_ comingObj : T)
+    func loadDatalocally(forEmail email: String)
     
-    func deleteObjectlocally<T : Object>(fromArr : Results<T>?, atIndex index: Int){
-        guard let fromArr else { return }
-        do {
-            try realm.write{
-                realm.delete(fromArr[index])
-            }
-        }catch let err {
-            fatalError("cannot delete due to \(err.localizedDescription)")
-        }
-    }
+    func fetchEmail()
+    func UploadDataFirebase(forEmail email: String, Obj comingObj: T)
+    func LoadDataFirebase(forEmail email: String )
+    func ModifyDataFireBase(forEmail email:String, forTitle comingTitle : String, newTitle: String?, newCheck: Bool?, toDel: Bool)
 }

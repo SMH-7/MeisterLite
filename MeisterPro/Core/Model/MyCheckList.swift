@@ -12,4 +12,6 @@ class MyCheckList : Object , Codable {
     @objc dynamic var  CheckListTitle : String = ""
     @objc dynamic var CheckListSender : String = ""
     @objc dynamic var Check : Bool = false
+    @objc dynamic var CheckListDate : Int = 0
+
 }

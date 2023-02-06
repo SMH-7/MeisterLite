@@ -19,13 +19,16 @@
 		ED36128725DAE3F9007A04FE /* checklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36128625DAE3F9007A04FE /* checklistView.swift */; };
 		ED36128B25DAE87D007A04FE /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36128A25DAE87D007A04FE /* Contants.swift */; };
 		ED37AA8E2976E9B000AD9925 /* tabViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE54A272963B15F00CE529A /* tabViewTest.swift */; };
+		ED5D0623298BFEEE0021E520 /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5D0622298BFEEE0021E520 /* Binder.swift */; };
 		ED5F047025DD6B1C0012422C /* MSProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F046E25DD6B1B0012422C /* MSProjectCell.swift */; };
 		ED5F047125DD6B1C0012422C /* MSProjectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED5F046F25DD6B1C0012422C /* MSProjectCell.xib */; };
-		ED5F047925DD84CC0012422C /* checkListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F047825DD84CC0012422C /* checkListModel.swift */; };
-		ED5F047C25DD84D60012422C /* projectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F047B25DD84D60012422C /* projectModel.swift */; };
-		ED5F047F25DD84E40012422C /* taskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F047E25DD84E40012422C /* taskModel.swift */; };
+		ED5F047925DD84CC0012422C /* MyCheckList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F047825DD84CC0012422C /* MyCheckList.swift */; };
+		ED5F047C25DD84D60012422C /* MyProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F047B25DD84D60012422C /* MyProject.swift */; };
+		ED5F047F25DD84E40012422C /* MyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F047E25DD84E40012422C /* MyTask.swift */; };
 		ED74580B294EBBB600F8BBAE /* tabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED74580A294EBBB600F8BBAE /* tabViewModel.swift */; };
 		ED74580D294EC9DB00F8BBAE /* fundamentalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED74580C294EC9DB00F8BBAE /* fundamentalViewController.swift */; };
+		ED7A3812298C0B18009E0AB7 /* localServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7A3811298C0B18009E0AB7 /* localServices.swift */; };
+		ED7A3814298C2B14009E0AB7 /* firebaseServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7A3813298C2B14009E0AB7 /* firebaseServices.swift */; };
 		ED88AB9F294C0468008894A8 /* signInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88AB9E294C0468008894A8 /* signInButton.swift */; };
 		ED88ABA2294C04CB008894A8 /* signInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABA1294C04CB008894A8 /* signInViewModel.swift */; };
 		ED88ABA6294C0659008894A8 /* registerTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABA5294C0659008894A8 /* registerTF.swift */; };
@@ -86,13 +89,16 @@
 		ED36128625DAE3F9007A04FE /* checklistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checklistView.swift; sourceTree = "<group>"; };
 		ED36128A25DAE87D007A04FE /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
 		ED4BA836296227C000253E7A /* MeisterProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeisterProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED5D0622298BFEEE0021E520 /* Binder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binder.swift; sourceTree = "<group>"; };
 		ED5F046E25DD6B1B0012422C /* MSProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSProjectCell.swift; sourceTree = "<group>"; };
 		ED5F046F25DD6B1C0012422C /* MSProjectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSProjectCell.xib; sourceTree = "<group>"; };
-		ED5F047825DD84CC0012422C /* checkListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkListModel.swift; sourceTree = "<group>"; };
-		ED5F047B25DD84D60012422C /* projectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectModel.swift; sourceTree = "<group>"; };
-		ED5F047E25DD84E40012422C /* taskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskModel.swift; sourceTree = "<group>"; };
+		ED5F047825DD84CC0012422C /* MyCheckList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCheckList.swift; sourceTree = "<group>"; };
+		ED5F047B25DD84D60012422C /* MyProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProject.swift; sourceTree = "<group>"; };
+		ED5F047E25DD84E40012422C /* MyTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTask.swift; sourceTree = "<group>"; };
 		ED74580A294EBBB600F8BBAE /* tabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabViewModel.swift; sourceTree = "<group>"; };
 		ED74580C294EC9DB00F8BBAE /* fundamentalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fundamentalViewController.swift; sourceTree = "<group>"; };
+		ED7A3811298C0B18009E0AB7 /* localServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localServices.swift; sourceTree = "<group>"; };
+		ED7A3813298C2B14009E0AB7 /* firebaseServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebaseServices.swift; sourceTree = "<group>"; };
 		ED88AB9E294C0468008894A8 /* signInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInButton.swift; sourceTree = "<group>"; };
 		ED88ABA1294C04CB008894A8 /* signInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInViewModel.swift; sourceTree = "<group>"; };
 		ED88ABA5294C0659008894A8 /* registerTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerTF.swift; sourceTree = "<group>"; };
@@ -174,9 +180,21 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		ED30D229298C803100A59F46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED5F047B25DD84D60012422C /* MyProject.swift */,
+				ED5F047E25DD84E40012422C /* MyTask.swift */,
+				ED5F047825DD84CC0012422C /* MyCheckList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		ED37AA7C2976D95700AD9925 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				ED30D229298C803100A59F46 /* Model */,
+				ED7A3810298C0B01009E0AB7 /* Services */,
 				ED37AA842976DAEC00AD9925 /* Register */,
 				ED37AA852976DAF700AD9925 /* Login */,
 				ED37AA832976DAE500AD9925 /* SignIn */,
@@ -214,7 +232,6 @@
 			isa = PBXGroup;
 			children = (
 				ED37AA872976DCA900AD9925 /* Cell */,
-				ED5F047E25DD84E40012422C /* taskModel.swift */,
 				ED8BDEED294E374300CBA11A /* taskViewModel.swift */,
 				ED36128325DAE3E7007A04FE /* taskView.swift */,
 			);
@@ -225,7 +242,6 @@
 			isa = PBXGroup;
 			children = (
 				ED37AA8B2976E45000AD9925 /* Cell */,
-				ED5F047825DD84CC0012422C /* checkListModel.swift */,
 				ED8BDEF3294E7B2500CBA11A /* checklistViewModel.swift */,
 				ED36128625DAE3F9007A04FE /* checklistView.swift */,
 			);
@@ -236,7 +252,6 @@
 			isa = PBXGroup;
 			children = (
 				ED37AA862976DC8F00AD9925 /* Cell */,
-				ED5F047B25DD84D60012422C /* projectModel.swift */,
 				ED0F77DD294D5FD400E1CD0D /* projectViewModel.swift */,
 				ED36128025DAE3D2007A04FE /* projectView.swift */,
 			);
@@ -301,6 +316,7 @@
 			children = (
 				ED36128A25DAE87D007A04FE /* Contants.swift */,
 				ED8BDEEF294E421B00CBA11A /* RealmHelper.swift */,
+				ED5D0622298BFEEE0021E520 /* Binder.swift */,
 				ED37AA892976DD5F00AD9925 /* Views */,
 			);
 			path = Shared;
@@ -382,6 +398,15 @@
 				EDE54A292963B3F800CE529A /* projectViewTest.swift */,
 			);
 			path = MeisterProTests;
+			sourceTree = "<group>";
+		};
+		ED7A3810298C0B01009E0AB7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ED7A3811298C0B18009E0AB7 /* localServices.swift */,
+				ED7A3813298C2B14009E0AB7 /* firebaseServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		ED88FC7A25DADB7F0005F723 = {
@@ -624,7 +649,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED5F047F25DD84E40012422C /* taskModel.swift in Sources */,
+				ED5F047F25DD84E40012422C /* MyTask.swift in Sources */,
 				ED36128425DAE3E7007A04FE /* taskView.swift in Sources */,
 				ED88AB9F294C0468008894A8 /* signInButton.swift in Sources */,
 				ED88ABB6294C248A008894A8 /* userProfileViewGesture.swift in Sources */,
@@ -636,7 +661,7 @@
 				ED88ABB4294C21EF008894A8 /* coverImageView.swift in Sources */,
 				ED89C25025F13C6900D8FA62 /* profileView.swift in Sources */,
 				ED88ABB8294C2634008894A8 /* mainProfileImageView.swift in Sources */,
-				ED5F047925DD84CC0012422C /* checkListModel.swift in Sources */,
+				ED5F047925DD84CC0012422C /* MyCheckList.swift in Sources */,
 				ED88ABAE294C1665008894A8 /* containerButton.swift in Sources */,
 				ED74580B294EBBB600F8BBAE /* tabViewModel.swift in Sources */,
 				ED88ABA6294C0659008894A8 /* registerTF.swift in Sources */,
@@ -644,6 +669,7 @@
 				ED88ABAA294C0B49008894A8 /* registerViewModel.swift in Sources */,
 				ED8BDEF2294E4A9D00CBA11A /* MSTaskCell.swift in Sources */,
 				ED88ABA8294C0938008894A8 /* commonAuthButton.swift in Sources */,
+				ED7A3812298C0B18009E0AB7 /* localServices.swift in Sources */,
 				EDB438A025EE89DB00226DC4 /* containerView.swift in Sources */,
 				ED88ABA2294C04CB008894A8 /* signInViewModel.swift in Sources */,
 				ED89C25B25F153E300D8FA62 /* profileModel.swift in Sources */,
@@ -651,9 +677,11 @@
 				ED8BDEF4294E7B2500CBA11A /* checklistViewModel.swift in Sources */,
 				ED8BDEEE294E374300CBA11A /* taskViewModel.swift in Sources */,
 				ED88FC8725DADB7F0005F723 /* AppDelegate.swift in Sources */,
+				ED7A3814298C2B14009E0AB7 /* firebaseServices.swift in Sources */,
+				ED5D0623298BFEEE0021E520 /* Binder.swift in Sources */,
 				EDFDB38A25E4248500D8B041 /* loginView.swift in Sources */,
 				ED8BDEF6294E8C1700CBA11A /* MSChecklistCell.swift in Sources */,
-				ED5F047C25DD84D60012422C /* projectModel.swift in Sources */,
+				ED5F047C25DD84D60012422C /* MyProject.swift in Sources */,
 				ED88ABB2294C20C2008894A8 /* profileViewModel.swift in Sources */,
 				ED36127E25DAE2A9007A04FE /* WelcomeViewController.swift in Sources */,
 				EDFDB38325E4245D00D8B041 /* signInView.swift in Sources */,

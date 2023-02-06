@@ -12,11 +12,7 @@ import RealmSwift
 class MSChecklist: basicVC {
     
     
-    var CheckLists : Results<MyCheckList>? {
-        didSet {
-            checklistTableView.reloadData()
-        }
-    }
+    var CheckLists : Results<MyCheckList>? 
     
     private var checklistTableView = toDoTV()
     private let viewModel = checklistViewModel()
@@ -26,7 +22,8 @@ class MSChecklist: basicVC {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        senderEmail = viewModel.fetchEmailForCurrentSession()
+        settingBinder()
+        viewModel.fetchEmail()
         
         LoadData()
         checkNeedForCloud()
@@ -35,23 +32,30 @@ class MSChecklist: basicVC {
     
     //MARK: - database functions
     
+    private func settingBinder() {
+        viewModel.email.bind {[weak self] comingMail in
+            guard let self else {return}
+            self.senderEmail = comingMail
+        }
+        viewModel.checkList.bind({ [weak self] updateList in
+            guard let self else { return }
+            self.CheckLists = updateList
+            self.checklistTableView.reloadData()
+        })
+        
+        viewModel.error.bind { err in
+            print(err)
+        }
+    }
     private func LoadData(){
-        CheckLists = viewModel.loadDatalocally(forEmail: senderEmail)
+        viewModel.loadDatalocally(forEmail: senderEmail)
     }
     
     private func checkNeedForCloud(){
         if CheckLists?.count == 0 {
-            viewModel.loadDataFromCloud(byEmail: senderEmail) {[weak self] comingData in
-                guard let self else {return}
-                self.CheckLists = comingData
-            }
+            viewModel.LoadDataFirebase(forEmail: senderEmail)
         }
     }
-    
-    private func writeChecklistAndSync(_ comingObj : MyCheckList){
-        CheckLists = viewModel.writeChecklistlocally(comingObj)
-    }
-    
     
     //MARK: - setting ui
     
@@ -84,17 +88,8 @@ class MSChecklist: basicVC {
 extension MSChecklist : textValuePasser {
     func didupdatevalue(string: String, index: Int) {
         guard let previousTitle = CheckLists?[index].CheckListTitle else { return }
-        
-        viewModel.GetFireBaseID(forEmail: senderEmail, forTitle: previousTitle){[weak self] (returnedID) in
-            guard let self else {return}
-            if returnedID.count > 0 {
-                self.viewModel.updateToCloud(withID: returnedID, name: string)
-            }else {
-                print("couldnt find your file ")
-            }
-        }
-
-        CheckLists = viewModel.updateLocally(title: string, atIndex: index, arr: CheckLists)
+        viewModel.ModifyDataFireBase(forEmail: senderEmail, forTitle: previousTitle, newTitle: string)
+        viewModel.updateLocally(title: string, atIndex: index, arr: CheckLists)
     }
 }
 
@@ -112,11 +107,12 @@ extension MSChecklist {
         let PopAction = UIAlertAction(title: "Done", style: .default) {[weak self] (action) in
             guard let self else {return}
             if let text = localTextField.text {
-                let temp = self.viewModel.formChecklistObj(name: text,
-                                                           email: self.senderEmail)
-                self.viewModel.uploadChecklistToCloud(forEmail: self.senderEmail,
-                                                      checklist: temp)
-                self.writeChecklistAndSync(temp)
+                let temp = MyCheckList()
+                temp.CheckListTitle = text
+                temp.CheckListSender = self.senderEmail
+
+                self.viewModel.UploadDataFirebase(forEmail: self.senderEmail, Obj: temp)
+                self.viewModel.writeDatalocally(temp)
             }
         }
         AddPopUp.addAction(PopAction)
@@ -128,15 +124,8 @@ extension MSChecklist {
 extension MSChecklist : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if var CheckLists {
-            viewModel.GetFireBaseID(forEmail: senderEmail, forTitle: CheckLists[indexPath.row].CheckListTitle) {[weak self] (returnedID) in
-                guard let self else { return }
-                if returnedID.count > 0 {
-                    self.viewModel.updateToCloud(withID: returnedID, check: CheckLists[indexPath.row].Check)
-                }else  {
-                    print("couldnt find your file")
-                }
-            }
-            self.CheckLists = viewModel.updateLocally(atIndex: indexPath.row, arr: CheckLists)
+            viewModel.ModifyDataFireBase(forEmail: senderEmail, forTitle: CheckLists[indexPath.row].CheckListTitle, newCheck: CheckLists[indexPath.row].Check)
+            viewModel.updateLocally(atIndex: indexPath.row, arr: CheckLists)
         }
     }
     
@@ -148,16 +137,9 @@ extension MSChecklist : UITableViewDelegate {
         
         let DeleteButton =  UITableViewRowAction(style: .default, title: "Delete") { [weak self] (_, indexpath) in
             guard let self else {return}
-            self.viewModel.GetFireBaseID(forEmail: detachedObj.CheckListSender,
-                                    forTitle: detachedObj.CheckListTitle) { (returnedID) in
-                if returnedID.count > 0 {
-                    self.viewModel.DelFromFireBase(with: returnedID)
-                }else {
-                    print("Couldnt find your file ")
-                }
-            }
-            
-            self.viewModel.deleteObjectlocally(fromArr: self.CheckLists, atIndex: indexpath.row)
+
+            self.viewModel.ModifyDataFireBase(forEmail: detachedObj.CheckListSender, forTitle: detachedObj.CheckListTitle, toDel : true)
+            self.viewModel.deletelocally(fromArr: self.CheckLists, atIndex: indexpath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
         

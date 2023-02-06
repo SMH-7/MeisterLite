@@ -11,11 +11,7 @@ import RealmSwift
 
 class MSProjects : basicVC {
     
-    private var Projects : Results<MyProject>? {
-        didSet {
-            projectTableView.reloadData()
-        }
-    }
+    private var Projects : Results<MyProject>?
     
     lazy private var projectTableView = toDoTV()
     lazy private var TFOverlay =  TFeditorVC()
@@ -26,8 +22,8 @@ class MSProjects : basicVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        senderEmail = viewModel.fetchEmailForCurrentSession()
+        settingBinder()
+        viewModel.fetchEmail()
         
         checkCache()
         checkNeedForCloud()
@@ -36,23 +32,32 @@ class MSProjects : basicVC {
     
     
     //MARK: - sync db
+    private func settingBinder() {
+        viewModel.email.bind {[weak self] comingMail in
+            guard let self else {return}
+            self.senderEmail = comingMail
+        }
+        viewModel.projectList.bind { [weak self] updatedList in
+            guard let self else {return}
+            self.Projects = updatedList
+            self.projectTableView.reloadData()
+        }
+        
+        viewModel.error.bind { err in
+            print(err)
+        }
+    }
     
     private func checkCache(){
-        Projects = viewModel.loadData(byEmail: senderEmail)
+        viewModel.loadDatalocally(forEmail: senderEmail)
     }
     
     private func checkNeedForCloud(){
         if Projects?.count == 0 {
-            viewModel.loadFromCloud(forEmail: senderEmail) {[weak self] projects in
-                guard let self else {return}
-                self.Projects = projects
-            }
+            viewModel.LoadDataFirebase(forEmail: senderEmail)
         }
     }
-    
-    private func updateDataAndSync(_ comingProject : MyProject){
-        Projects = viewModel.writeProjectToLocal(comingProject)
-    }
+
     //MARK: - setting views
     
     private func settingViews(){
@@ -80,17 +85,8 @@ class MSProjects : basicVC {
 extension MSProjects : textValuePasser {
     func didupdatevalue(string: String, index: Int) {
         guard let previousText = Projects?[index].ProjectTitle else { return }
-        
-        viewModel.GetFireBaseID(byName: previousText, forEmail: senderEmail) {[weak self] (returnedID) in
-            guard let self else {return}
-            if returnedID.count > 0 {
-                self.viewModel.updateProjectObj(ObjectID: returnedID, updateName: string)
-            }else {
-                print("couldnt find your file")
-            }
-        }
-        
-        Projects = viewModel.updateProjectToLocal(lhs: Projects, toIndex: index, withString: string)
+        viewModel.ModifyDataFireBase(forEmail: senderEmail, forTitle: previousText, newTitle: string)
+        viewModel.updateLocally(title: string, atIndex: index, arr: Projects)
     }
 }
 
@@ -107,12 +103,12 @@ extension MSProjects {
         let PopAction = UIAlertAction(title: "Done", style: .default) {[weak self] (action) in
             guard let self else {return}
             if let text = localTextField.text {
+                let temp = MyProject()
+                temp.ProjectSender = self.senderEmail
+                temp.ProjectTitle = text
                 
-                let temp = self.viewModel.formProjectObj(withName: text,
-                                                         withEmail: self.senderEmail)
-                
-                self.viewModel.updateProjectToCloud(temp)
-                self.updateDataAndSync(temp)
+                self.viewModel.UploadDataFirebase(forEmail: self.senderEmail, Obj: temp)
+                self.viewModel.writeDatalocally(temp)
             }
         }
         AddPop.addAction(PopAction)
@@ -134,15 +130,10 @@ extension MSProjects : UITableViewDelegate {
         }
         let DeleteButton = UITableViewRowAction(style: .default, title: "Delete") { [weak self] (_, indexpath) in
             guard let self else {return}
-            self.viewModel.GetFireBaseID(byName: detachedObj.ProjectTitle,
-                                         forEmail: self.senderEmail) { (returnid) in
-                if returnid.count >  0 {
-                    self.viewModel.DelFromFireBase(withid: returnid)
-                }else  {
-                    print("not found sry hehe")
-                }
-            }
-            self.viewModel.deleteObjectlocally(fromArr: self.Projects, atIndex: indexpath.row)
+            self.viewModel.ModifyDataFireBase(forEmail: self.senderEmail,
+                                              forTitle: detachedObj.ProjectTitle,
+                                              toDel: true)
+            self.viewModel.deletelocally(fromArr: self.Projects, atIndex: indexpath.row)
             tableView.deleteRows(at: [indexpath], with: .fade)
         }
         
