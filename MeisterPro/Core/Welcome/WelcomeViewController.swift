@@ -9,17 +9,17 @@ import UIKit
 import SnapKit
 import PDFKit
 
-class WelcomeViewController: basicVC {
+class WelcomeViewController: BaseVC {
 
-    lazy private var quotesLabel = quoteLabel()
+    lazy private var quotesLabel = QuoteLabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        SettingQuoteLabel()
+        setQuoteLabel()
     }
 
 
-    private func SettingQuoteLabel() {
+    private func setQuoteLabel() {
         view.addSubview(quotesLabel)
         
         quotesLabel.snp.makeConstraints { (para) in

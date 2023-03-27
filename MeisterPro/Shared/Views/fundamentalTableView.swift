@@ -7,7 +7,7 @@
 
 import UIKit
 
-class toDoTV: UITableView {
+class BaseTV: UITableView {
     
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)

@@ -10,27 +10,27 @@ import Foundation
 
 class MSProjectCell: UITableViewCell {
 
-    @IBOutlet weak var ProjectTitle: UILabel!
-    @IBOutlet weak var ProjectIcon: UIImageView!
+    @IBOutlet weak private var projectTitle: UILabel!
+    @IBOutlet weak private var projectIcon: UIImageView!
 
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        SettingCell()
+        SetCell()
 
     }
     
     func SetCell(withimage image : UIImage , withtext text: String){
-            ProjectIcon.image = image
-            ProjectTitle.text = text
+            projectIcon.image = image
+            projectTitle.text = text
     }
     
-    private func SettingCell(){
+    private func SetCell(){
         backgroundColor = .clear
         selectionStyle = .none
 
-        ProjectTitle.textColor = .white
-        ProjectTitle.font = .boldSystemFont(ofSize: 27)
+        projectTitle.textColor = .white
+        projectTitle.font = .boldSystemFont(ofSize: 27)
 
     }
     

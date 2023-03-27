@@ -21,7 +21,7 @@ class Binder<T> {
         self.value = value
     }
 
-    func bindAndFire(_ listener:@escaping (T) -> Void) {
+    func bindAndFire(_ listener:@escaping Handler) {
         self.bind(listener)
         self.fire()
     }
