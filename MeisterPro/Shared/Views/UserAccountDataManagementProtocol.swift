@@ -20,3 +20,7 @@ protocol UserAccountDataManagementProtocol {
     func fetchDataFromFirebase(forEmail email: String )
     func ModifyFireBaseData(forEmail email:String, forTitle comingTitle : String, newTitle: String?, newCheck: Bool?, toDel: Bool)
 }
+
+extension UserAccountDataManagementProtocol {
+    func updateLocally(atIndex index: Int) {}
+}

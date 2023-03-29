@@ -18,10 +18,10 @@ class AuthActionButton : UIButton {
     
     convenience init(setTitle comingString: String, togglePattern : Bool){
         self.init(frame: .zero)
-        settingAttr(togglePattern, comingString)
+        setAttr(togglePattern, comingString)
     }
         
-    private func settingAttr(_ comingBool : Bool,_ comingString: String){
+    private func setAttr(_ comingBool : Bool,_ comingString: String){
         setTitle(comingString, for: .normal)
         
         if !comingBool {

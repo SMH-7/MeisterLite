@@ -16,7 +16,7 @@ class AuthButton: UIButton {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        settingButton()
+        setAttr()
     }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -27,7 +27,7 @@ class AuthButton: UIButton {
         setTitle(comingString, for: .normal)
     }
     
-    private func settingButton(){
+    private func setAttr(){
         backgroundColor = .clear
         setTitleColor(.cyan, for: .normal)
     }

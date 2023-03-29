@@ -81,10 +81,10 @@ class MSProjectVC : BaseVC {
 //MARK: - update delegate
 
 extension MSProjectVC : textValuePasser {
-    func didupdatevalue(string: String, index: Int) {
+    func didUpdateValueAtIndex(value: String, index: Int) {
         guard let previousText = projects?[index].ProjectTitle else { return }
-        viewModel.ModifyFireBaseData(forEmail: senderEmail, forTitle: previousText, newTitle: string)
-        viewModel.updateObjectLocally(atIndex: index, title: string)
+        viewModel.ModifyFireBaseData(forEmail: senderEmail, forTitle: previousText, newTitle: value)
+        viewModel.updateObjectLocally(atIndex: index, title: value)
     }
 }
 
@@ -136,9 +136,9 @@ extension MSProjectVC : UITableViewDelegate {
         
         let EditButton = UITableViewRowAction(style: .default, title: "Edit") { [weak self] (_, indexpath) in
             guard let self else {return}
-            self.editorView.textfieldMetaData(
-                with: indexpath.row,
-                withtext: self.projects![indexpath.row].ProjectTitle)
+            self.editorView.textfieldMetaDataAtIndex(
+                index: indexpath.row,
+                withText: self.projects![indexpath.row].ProjectTitle)
             self.editorView.modalPresentationStyle = .overFullScreen
             self.editorView.modalTransitionStyle = .crossDissolve
             self.present(self.editorView, animated: true)

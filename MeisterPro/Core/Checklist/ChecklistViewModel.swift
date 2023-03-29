@@ -9,11 +9,7 @@ import UIKit
 import Firebase
 import RealmSwift
 
-protocol localCheckListCRUD {
-    func updateLocally(atIndex index: Int)
-}
-
-class ChecklistViewModel : BaseViewModel, UserAccountDataManagementProtocol, localCheckListCRUD {
+class ChecklistViewModel : BaseViewModel, UserAccountDataManagementProtocol {
         
     typealias T = Checklist
 

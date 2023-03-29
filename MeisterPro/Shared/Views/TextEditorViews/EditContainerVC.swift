@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 protocol textValuePasser : AnyObject {
-    func didupdatevalue(string : String , index : Int)
+    func didUpdateValueAtIndex(value : String , index : Int)
 }
 
 class EditContainerVC: UIViewController {
@@ -36,9 +36,9 @@ class EditContainerVC: UIViewController {
     
     //MARK: - communicator
     
-    func textfieldMetaData(with comingIndex : Int , withtext comingText: String){
-        self.index = comingIndex
-        self.editableTF.text = comingText
+    func textfieldMetaDataAtIndex(index : Int , withText text: String){
+        self.index = index
+        self.editableTF.text = text
     }
     
     //MARK: - setting UI
@@ -84,7 +84,7 @@ extension EditContainerVC {
     @objc private func dismissTapped(){
         dismiss(animated: true) {
             if let typedtext = self.editableTF.text {
-                self.delegate?.didupdatevalue(string: typedtext, index: self.index)
+                self.delegate?.didUpdateValueAtIndex(value: typedtext, index: self.index)
             }
         }
     }

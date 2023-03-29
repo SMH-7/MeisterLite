@@ -11,7 +11,7 @@ class AuthTextField : UITextField {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        settingTextField()
+        setTextField()
     }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -23,7 +23,7 @@ class AuthTextField : UITextField {
         layer.cornerRadius = setCorner
     }
     
-    private func settingTextField(){
+    private func setTextField(){
         backgroundColor = .white.withAlphaComponent(0.07)
         textColor = .cyan
     }
