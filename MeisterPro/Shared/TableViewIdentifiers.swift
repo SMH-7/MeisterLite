@@ -36,10 +36,10 @@ enum FireBaseConstant {
         static let time = "Date"
         static let check = "Condition"
     }
-    enum InfoVC {
-        static let Background = "Background"
-        static let Profile = "Profile"
-        static let Sender = "Sender"
+    enum User {
+        static let cover = "Background"
+        static let profile = "Profile"
+        static let email = "Sender"
     }
 }
 

@@ -92,7 +92,7 @@ final class FirebaseManager<T: Object> {
             key_name  = FireBaseConstant.Project.title
         case .profile:
             table = FireBaseConstant.InfoCollectionName
-            Key_senderMail = FireBaseConstant.InfoVC.Sender
+            Key_senderMail = FireBaseConstant.User.email
         }
         
         
@@ -152,7 +152,7 @@ final class FirebaseManager<T: Object> {
             key_name = FireBaseConstant.Task.title
         case .profile:
             table = FireBaseConstant.InfoCollectionName
-            key_name = isProfileImage ? FireBaseConstant.InfoVC.Profile : FireBaseConstant.InfoVC.Background
+            key_name = isProfileImage ? FireBaseConstant.User.profile : FireBaseConstant.User.cover
         }
         
         db.collection(table).document(id).updateData([
@@ -193,7 +193,7 @@ final class FirebaseManager<T: Object> {
             key_dataField = FireBaseConstant.Project.time
         case .profile:
             table = FireBaseConstant.InfoCollectionName
-            Key_senderMail = FireBaseConstant.InfoVC.Sender
+            Key_senderMail = FireBaseConstant.User.email
         }
         
         if category == .profile {
@@ -208,9 +208,9 @@ final class FirebaseManager<T: Object> {
                             for EachData in ReturnData {
                                 let currData = EachData.data()
                                 let newObj = Profile()
-                                if let email = currData[FireBaseConstant.InfoVC.Sender] as? String ,
-                                   let profile = currData[FireBaseConstant.InfoVC.Profile] as? NSData ,
-                                   let background = currData[FireBaseConstant.InfoVC.Background] as? NSData {
+                                if let email = currData[FireBaseConstant.User.email] as? String ,
+                                   let profile = currData[FireBaseConstant.User.profile] as? NSData ,
+                                   let background = currData[FireBaseConstant.User.cover] as? NSData {
                                     newObj.Sender = email
                                     newObj.background = background
                                     newObj.profile = profile
@@ -299,9 +299,9 @@ final class FirebaseManager<T: Object> {
         case .profile:
             table = FireBaseConstant.InfoCollectionName
             data = [
-                FireBaseConstant.InfoVC.Sender : email,
-                FireBaseConstant.InfoVC.Background : (object as! Profile).background,
-                FireBaseConstant.InfoVC.Profile :  (object as! Profile).profile
+                FireBaseConstant.User.email : email,
+                FireBaseConstant.User.cover : (object as! Profile).background,
+                FireBaseConstant.User.profile :  (object as! Profile).profile
             ]
         }
         

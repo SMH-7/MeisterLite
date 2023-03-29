@@ -80,10 +80,10 @@ class MSChecklistVC: BaseVC {
 //MARK: - protocol delegate
 
 extension MSChecklistVC : textValuePasser {
-    func didupdatevalue(string: String, index: Int) {
+    func didUpdateValueAtIndex(value: String, index: Int) {
         guard let previousTitle = checklists?[index].CheckListTitle else { return }
-        viewModel.ModifyFireBaseData(forEmail: senderEmail, forTitle: previousTitle, newTitle: string)
-        viewModel.updateObjectLocally(atIndex: index, title: string)
+        viewModel.ModifyFireBaseData(forEmail: senderEmail, forTitle: previousTitle, newTitle: value)
+        viewModel.updateObjectLocally(atIndex: index, title: value)
     }
 }
 
@@ -141,7 +141,7 @@ extension MSChecklistVC : UITableViewDelegate {
         
         let EditButton = UITableViewRowAction(style: .default, title: "Edit") {[weak self] (rowaction, indexpath) in
             guard let self else {return}
-            self.editorView.textfieldMetaData(with: indexpath.row, withtext: self.checklists![indexpath.row].CheckListTitle)
+            self.editorView.textfieldMetaDataAtIndex(index: indexpath.row, withText: self.checklists![indexpath.row].CheckListTitle)
             self.editorView.modalPresentationStyle = .overFullScreen
             self.editorView.modalTransitionStyle = .crossDissolve
             self.present(self.editorView, animated: true, completion: nil)

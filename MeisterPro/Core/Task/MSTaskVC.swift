@@ -76,10 +76,10 @@ class MSTaskVC: BaseVC {
 //MARK: - protocol delegate
 
 extension MSTaskVC : textValuePasser {
-    func didupdatevalue(string: String, index: Int) {
+    func didUpdateValueAtIndex(value: String, index: Int) {
         guard let previousTitle = tasks?[index].TaskTitle else { return }
-        viewModel.ModifyFireBaseData(forEmail: senderEmail, forTitle: previousTitle, newTitle: string)
-        viewModel.updateObjectLocally(atIndex: index, title: string)
+        viewModel.ModifyFireBaseData(forEmail: senderEmail, forTitle: previousTitle, newTitle: value)
+        viewModel.updateObjectLocally(atIndex: index, title: value)
     }
 }
 
@@ -142,7 +142,7 @@ extension MSTaskVC : UITableViewDelegate {
         
         let EditButton =  UITableViewRowAction(style: .default, title: "Edit") { [weak self] (_, indexpath) in
             guard let self else {return}
-            self.editorView.textfieldMetaData(with: indexpath.row, withtext: self.tasks![indexpath.row].TaskTitle)
+            self.editorView.textfieldMetaDataAtIndex(index: indexpath.row, withText: self.tasks![indexpath.row].TaskTitle)
             self.editorView.modalPresentationStyle = .overFullScreen
             self.editorView.modalTransitionStyle = .crossDissolve
             self.present(self.editorView, animated: true)
